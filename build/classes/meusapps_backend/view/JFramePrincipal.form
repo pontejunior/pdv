@@ -210,7 +210,7 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <Component id="jTabbedPane1" pref="718" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -275,9 +275,9 @@
                           <Component id="jButtonPedidosDeFaturamento" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButtonOrçamentos" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
                           <Component id="jButtonDevoluções" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonPedidosDeCompras" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonProdutos" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonFornecedores" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <Component id="jButtonPedidosDeCompras" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonProdutos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonFornecedores" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jButtonClientes" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -293,7 +293,7 @@
               <Font name="SansSerif" size="10" style="1"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/logoeaofazul.jpg"/>
+              <Image iconType="3" name="/Imagens/Drive48.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Clientes"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -313,12 +313,17 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SansSerif" size="10" style="1"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/Drive48.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Fornecedores"/>
             <Property name="alignmentY" type="float" value="0.0"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jButtonFornecedores"/>
             </Property>
+            <Property name="verticalAlignment" type="int" value="3"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonFornecedoresActionPerformed"/>
@@ -329,12 +334,17 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SansSerif" size="10" style="1"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/Drive48.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Produtos"/>
             <Property name="alignmentY" type="float" value="0.0"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jButtonFornecedores"/>
             </Property>
+            <Property name="verticalAlignment" type="int" value="3"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonProdutosActionPerformed"/>
@@ -345,12 +355,17 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="SansSerif" size="10" style="1"/>
             </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/Drive48.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Pedidos de Compra"/>
             <Property name="alignmentY" type="float" value="0.0"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jButtonFornecedores"/>
             </Property>
+            <Property name="verticalAlignment" type="int" value="3"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPedidosDeComprasActionPerformed"/>

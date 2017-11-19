@@ -89,7 +89,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
         setSize(1024, 768);
 
         jButtonClientes.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
-        jButtonClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/logoeaofazul.jpg"))); // NOI18N
+        jButtonClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
         jButtonClientes.setText("Clientes");
         jButtonClientes.setAlignmentY(0.0F);
         jButtonClientes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -103,10 +103,13 @@ public class JFramePrincipal extends javax.swing.JFrame {
         });
 
         jButtonFornecedores.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
         jButtonFornecedores.setText("Fornecedores");
         jButtonFornecedores.setAlignmentY(0.0F);
         jButtonFornecedores.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonFornecedores.setNextFocusableComponent(jButtonFornecedores);
+        jButtonFornecedores.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jButtonFornecedores.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonFornecedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonFornecedoresActionPerformed(evt);
@@ -114,10 +117,13 @@ public class JFramePrincipal extends javax.swing.JFrame {
         });
 
         jButtonProdutos.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
         jButtonProdutos.setText("Produtos");
         jButtonProdutos.setAlignmentY(0.0F);
         jButtonProdutos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonProdutos.setNextFocusableComponent(jButtonFornecedores);
+        jButtonProdutos.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jButtonProdutos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonProdutos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonProdutosActionPerformed(evt);
@@ -125,10 +131,13 @@ public class JFramePrincipal extends javax.swing.JFrame {
         });
 
         jButtonPedidosDeCompras.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonPedidosDeCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
         jButtonPedidosDeCompras.setText("Pedidos de Compra");
         jButtonPedidosDeCompras.setAlignmentY(0.0F);
         jButtonPedidosDeCompras.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonPedidosDeCompras.setNextFocusableComponent(jButtonFornecedores);
+        jButtonPedidosDeCompras.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jButtonPedidosDeCompras.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonPedidosDeCompras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonPedidosDeComprasActionPerformed(evt);
@@ -340,9 +349,9 @@ public class JFramePrincipal extends javax.swing.JFrame {
                         .addComponent(jButtonPedidosDeFaturamento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButtonOrçamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButtonDevoluções, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonPedidosDeCompras, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonProdutos, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonFornecedores, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButtonPedidosDeCompras)
+                        .addComponent(jButtonProdutos)
+                        .addComponent(jButtonFornecedores))
                     .addComponent(jButtonClientes))
                 .addGap(0, 5, Short.MAX_VALUE))
         );
@@ -484,7 +493,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 718, Short.MAX_VALUE))
         );
 
         pack();
