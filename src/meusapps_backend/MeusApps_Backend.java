@@ -5,8 +5,6 @@
  */
 package meusapps_backend;
 
-import meusapps_backend.view.JFramePrincipal;
-
 /**
  *
  * @author pontejunior
@@ -18,7 +16,6 @@ public class MeusApps_Backend {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        new JFramePrincipal().show();
     }
     
 }

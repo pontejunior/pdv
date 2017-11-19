@@ -16,18 +16,15 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemClientesActionPerformed"/>
-              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCompradores">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Compradores"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEntregadores">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEntregador">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Entregadores"/>
+                <Property name="text" type="java.lang.String" value="Entregador"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFabricantes">
@@ -37,19 +34,25 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFornecedores">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+F"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Fornecedores"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemFornecedoresActionPerformed"/>
-              </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGarcom">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGar&#xe7;om">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+V"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Gar&#xe7;om"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMotoristas">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+M"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Motoristas"/>
               </Properties>
             </MenuItem>
@@ -58,51 +61,987 @@
                 <Property name="text" type="java.lang.String" value="Portadores"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemProdutos">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+P"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Produtos"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem10">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemServi&#xe7;os">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+S"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;os"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem11">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTransportadoras">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+T"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Transportadoras"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem11ActionPerformed"/>
-              </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem12">
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemT&#xe9;cnicos">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+E"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="T&#xe9;cnicos"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem13">
+            <Menu class="javax.swing.JMenu" name="jMenuOutros">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Outros"/>
               </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem14">
+              <SubComponents>
+                <Menu class="javax.swing.JMenu" name="jMenuCrm">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Crm"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCategoria">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Categoria"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCausaRaiz">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Causa raiz"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPrioridade">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Prioridade"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSetor">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Setor"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSeveridade">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Severidade"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTipoDeContato">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipo de contato"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTipoOcorr&#xea;ncia">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipo ocorr&#xea;ncia"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTipoRegistro">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipo registro"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTipoStatus">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipo status"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuCteCadastro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ct-e"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPar&#xe2;metrosCte">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Par&#xe2;metros"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemPar&#xe2;metrosCteActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemS&#xe9;riesCte">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="S&#xe9;ries"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuCteMDFe">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ct-e/MDF-e"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMeiosDeTransportes">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Meios de transporte"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuEmpresasEFiliais">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Empresas e filliais"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEmpresas">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Empresas"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemEmpresasActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuEndere&#xe7;os">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Endere&#xe7;os"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCEPsNovos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="CEPs novos"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemCEPsNovosActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCidades">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cidades"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEstados">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Estados"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPa&#xed;ses">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Pa&#xed;ses"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRegi&#xf5;es">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Regi&#xf5;es"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuEntidades">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Entidades"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConfigura&#xe7;&#xe3;oCart&#xe3;oFidelidade">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xe3;o cart&#xe3;o fidelidade"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeHist&#xf3;ricoDeContato">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de hist&#xf3;rico de contato"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuEstoque">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Estoque"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFam&#xed;liasDeProdutos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Fam&#xed;lias de produtos"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFichaT&#xe9;cnicaDeDesagrega&#xe7;&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ficha t&#xe9;cnica de desagrega&#xe7;&#xe3;o"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemFichaT&#xe9;cnicaDeDesagrega&#xe7;&#xe3;oActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGruposDeProduto">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Grupos de produto"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemGruposDeProdutoActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemImagens">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Imagens"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeGradeDeProduto">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de grade de produto"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMotivosDeAjusteDeEstoque">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Motivos de ajuste de estoque"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemUnidadesDeMedida">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Unidades de medida"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemUnidadesDeMedidaActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuExpedi&#xe7;&#xe3;o">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Expedi&#xe7;&#xe3;o"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemHist&#xf3;ricoDeEntrega">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Hist&#xf3;rico de entrega"/>
+                        <Property name="toolTipText" type="java.lang.String" value=""/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRotas">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Rotas"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuFerramentas">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ferramentas"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEDI">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="EDI"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTextosGen&#xe9;ricos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Textos gen&#xe9;ricos"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuFinanceiroCad">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Financeiro"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAdministradorasDeCart&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Administradoras de cart&#xe3;o"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemBancos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Bancos"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemBandeirasDeCart&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Bandeiras de cart&#xe3;o"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemBandeirasDeCart&#xe3;oActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCentrosDeCustos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Centros de custo"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConfigura&#xe7;&#xf5;esCentrosDeCusto">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xf5;es centros de custo"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemContasCorrentes">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Contas correntes"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCota&#xe7;&#xe3;oDeMoedas">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cota&#xe7;&#xe3;o de moedas"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemC&#xf3;digosReduzidosCentrosDeCusto">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="C&#xf3;digos reduzidos centros de custo"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemExce&#xe7;&#xf5;esDoProcessamentoDoRetorno">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Exce&#xe7;&#xf5;es do processamento do retorno"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFeriados">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Feriados"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMotivosDeBaixaDoFinanceiro">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Motivos de baixa do financeiro"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPlanoDeContasGerencial">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Plano de contas gerencial"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeCobran&#xe7;a">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de cobran&#xe7;a"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeComiss&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de comiss&#xe3;o"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeDocumentosFinanceiro">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de documentoS financeiro"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuGNREOnline">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="GNRE On-line"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPar&#xe2;mentrosGNREOnline">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Par&#xe2;mentros GNRE On-line"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuMDFe">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MDF-e"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPar&#xe2;metrosMDFe">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Par&#xe2;metros"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemS&#xe9;riesMDFe">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="S&#xe9;ries"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemS&#xe9;riesMDFeActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuModelosDeImpress&#xe3;o">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Modelos de impress&#xe3;o"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConfigura&#xe7;&#xe3;oDeImpressoraN&#xe3;oFiscal">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xe3;o de impressora n&#xe3;o fiscal"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModeloDeLaudoT&#xe9;cnico">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelo de laudo t&#xe9;cnico"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModeloDeReciboDeEntregaDeEquipamento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelo de recibo de entrega de equipamento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeDAVOS">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de DAV-OS"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeCasoDoCRM">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de caso do CRM"/>
+                        <Property name="toolTipText" type="java.lang.String" value=""/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeDevolu&#xe7;&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de devolu&#xe7;&#xe3;o"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeDuplicata">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de duplicata"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeEtiquetaDeC&#xf3;digoDeBarras">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de etiqueta de c&#xf3;digo de barras"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeEtiquetaDeC&#xf3;digoDeBarrasScript">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de etiqueta de c&#xf3;digo de barras - Script"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeEtiquetaDeMalaDireita">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de etiqueta de mala direita"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeEtiquetaDeVolumesDeNotaFiscal">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de etiqueta de volume de nota fiscal"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeNotaFiscal">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de nota fiscal"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemModelosDeNotaFiscalActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeOrdemDeServi&#xe7;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de ordem de servi&#xe7;o"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeOr&#xe7;amento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de or&#xe7;amento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeOr&#xe7;amentoDeFaturamento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de or&#xe7;amento de faturamento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDePedidoDeCompra">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de pedido de compra"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDePedidoDeFaturamento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de pedido de faturamento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDePedidoDeVenda">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de pedido de venda"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemModelosDeReciboDePagamento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Modelos de recibo de pagamento"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuNFCeSAT">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="NFC-e/SAT"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConsultaCFe">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Consulta CF-e"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConsultaNFCe">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Consulta NFC-e"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPar&#xe2;metrosNFCeSAT">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Par&#xe2;metros NFC-e/SAT"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuNotasFiscaisCadastro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Notas Fiscais"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAl&#xed;quotasPorEstado">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Al&#xed;quotas por estado"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCEST">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="CEST"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEnquadramentosDeIPI">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Enquadramentos de IPI"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemIbpt">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ibpt"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNaturezasDeOpera&#xe7;&#xe3;oETributa&#xe7;&#xf5;esEspeciais">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Naturezas de opera&#xe7;&#xe3;o e tributa&#xe7;&#xf5;es especiais"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNaturezasDeOpera&#xe7;&#xe3;oETributa&#xe7;&#xf5;esEspeciaisPorEstado">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Naturezas de opera&#xe7;&#xf5;es e tributa&#xe7;&#xf5;es especiais por Estado"/>
+                        <Property name="toolTipText" type="java.lang.String" value=""/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNcms">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ncms"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemOpera&#xe7;&#xf5;esFiscais">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Opera&#xe7;&#xf5;es fiscais"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPar&#xe2;metrosDaNFe">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Par&#xe2;metros da NF-e"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPar&#xe2;metrosDaNFSe">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Par&#xe2;metros da NFS-e"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTabelasDeMVA">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tabelas de MVA"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTabelasDeConvers&#xe3;oDeCSTCSOSN">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tabelas de convers&#xe3;o de CST/CSOSN"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemZonaFrancaALC">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Zona Franca/ALC"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuOrdemDeServi&#xe7;oCadastro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ordem de servi&#xe7;o"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConfigura&#xe7;&#xe3;oDaOrdemDeServi&#xe7;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xe3;o da ordem de servi&#xe7;o"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemObjetos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Objetos"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPrioridades">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Prioridades"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeEvento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de evento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeProblema">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de problema"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItem&#xc1;reas">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#xc1;reas"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuPDV">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="PDV"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAlterarSequenciaNumera&#xe7;&#xe3;oDeDocumentos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Alterar sequencia numera&#xe7;&#xe3;o de documentos"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCancelamentoDeOpera&#xe7;&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cancelamento de opera&#xe7;&#xe3;o"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemCancelamentoDeOpera&#xe7;&#xe3;oActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConsultaOpera&#xe7;&#xf5;es">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Consulta opera&#xe7;&#xf5;es"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemConsultaOpera&#xe7;&#xf5;esActionPerformed"/>
+                      </Events>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemExtratoDoCart&#xe3;oFidelidade">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Extrato do cart&#xe3;o fidelidade"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemImagensPromocionais">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Imagens promocionais"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMeiosDePagamento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Meios de pagamento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMotivosDeSangriaSuprimento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Motivos de Sangria/Suprimento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemOpera&#xe7;&#xf5;esComPend&#xea;nciaDeProcessamento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Opera&#xe7;&#xf5;es com pend&#xea;ncia de processamento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRedu&#xe7;&#xe3;oZ">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Redu&#xe7;&#xe3;o Z"/>
+                      </Properties>
+                    </MenuItem>
+                    <Menu class="javax.swing.JMenu" name="jMenuImporta&#xe7;&#xe3;oDoAtocotepe1704">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Importa&#xe7;&#xe3;o do ato cotepe 17/04"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAn&#xe1;lise">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="An&#xe1;lise"/>
+                          </Properties>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemOpera&#xe7;&#xf5;es">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Opera&#xe7;&#xf5;es"/>
+                          </Properties>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRedu&#xe7;&#xf5;esZ">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Redu&#xe7;&#xf5;es Z"/>
+                          </Properties>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                    <Menu class="javax.swing.JMenu" name="jMenu3MovimentoECF">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Movimento ECF"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRequisitos0112">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Requisitos 01.12"/>
+                          </Properties>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuSPED">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SPED"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAjusteApura&#xe7;&#xe3;oIcms">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ajuste Apura&#xe7;&#xe3;o Icms"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAjusteDocumentoFiscal">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ajuste Documento Fiscal"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAjusteApura&#xe7;&#xe3;oImpostos">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ajuste apura&#xe7;&#xe3;o impostos"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemApura&#xe7;&#xe3;oImpostosSPED">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Apura&#xe7;&#xe3;o Impostos - SPED"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCr&#xe9;ditosDeEst&#xed;mulo">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Cr&#xe9;ditos de Est&#xed;mulo"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemC&#xf3;digosDeReceitaDoICMS">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="C&#xf3;digos de receita do ICMS"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="JMenuItemFundoDeCombateAPobreza">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Fundo de Combate a Pobreza"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemInvent&#xe1;rios">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Invent&#xe1;rios"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemObriga&#xe7;&#xf5;esDoICMSRecolhidoRecolherDIFALEC8715">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Obriga&#xe7;&#xf5;es do ICMS recolhido/recolher - DIFAL EC 87/15"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemObserva&#xe7;&#xf5;esLan&#xe7;amentoFiscal">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Observa&#xe7;&#xf5;es lan&#xe7;amento fiscal"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemOutrosLan&#xe7;amentosPorFilial">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Outros lan&#xe7;amentos por filial"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPar&#xe2;metrosDoSPEDFiscal">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Par&#xe2;metros do SPED fiscal"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSubApura&#xe7;&#xe3;oDoICMS">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Sub-Apura&#xe7;&#xe3;o do ICMS"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuTabelaDePre&#xe7;os">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Tabela de pre&#xe7;os"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConfigura&#xe7;&#xf5;esDoPainelDePre&#xe7;os">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Configura&#xe7;&#xf5;es do painel de pre&#xe7;os"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTabelasDePre&#xe7;os">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tabelas de pre&#xe7;os"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuUnichef">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Unichef"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCapta&#xe7;&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Capta&#xe7;&#xe3;o"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCombosUnichef">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Combos Unichef"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGruposDeProdutosUnichef">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Grupos de produtos Unichef"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemLan&#xe7;amentoAutom&#xe1;tico">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Lan&#xe7;amento autom&#xe1;tico"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemReajusteDePre&#xe7;osUnichef">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Reajuste de pre&#xe7;os Unichef"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTaxaDeEntrega">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Taxa de entrega"/>
+                      </Properties>
+                    </MenuItem>
+                    <Menu class="javax.swing.JMenu" name="jMenuImpress&#xe3;o">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Impress&#xe3;o"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGrupoDeImpressoras">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Grupos de impressoras"/>
+                          </Properties>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPontosDeImpress&#xe3;o">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Pontos de impress&#xe3;o"/>
+                          </Properties>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeImpress&#xe3;o">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Tipos de impress&#xe3;o"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemTiposDeImpress&#xe3;oActionPerformed"/>
+                          </Events>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                    <Menu class="javax.swing.JMenu" name="jMenuRelat&#xf3;riosUnichef">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
+                      </Properties>
+                      <SubComponents>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRelat&#xf3;rioDeCombos">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de combos"/>
+                          </Properties>
+                        </MenuItem>
+                        <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRelat&#xf3;rioDeEntregas">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de entregas"/>
+                          </Properties>
+                        </MenuItem>
+                      </SubComponents>
+                    </Menu>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuUsu&#xe1;rios">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Usu&#xe1;rios"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPerfisDeUsu&#xe1;rio">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Perfis de usu&#xe1;rio"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemUsu&#xe1;rios">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Usu&#xe1;rios"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+                <Menu class="javax.swing.JMenu" name="jMenuVendasCadastro">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas"/>
+                  </Properties>
+                  <SubComponents>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCondi&#xe7;&#xf5;esDePagamento">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Condi&#xe7;&#xf5;es de pagamento"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMotivosDeDesconto">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Motivos de desconto"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPromo&#xe7;&#xf5;es">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Promo&#xe7;&#xf5;es"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDeContato">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de contrato"/>
+                      </Properties>
+                    </MenuItem>
+                    <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTiposDePedido">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tipos de pedido"/>
+                      </Properties>
+                    </MenuItem>
+                  </SubComponents>
+                </Menu>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="jMenuRelat&#xf3;rios">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
               </Properties>
-            </MenuItem>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAniversariantes">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Aniversariantes"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemExtratoDoCart&#xe3;oFidelidadeRelat&#xf3;rios">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Extrato do cart&#xe3;o fidelidade"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMalaDireita">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Mala direita"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPautaDePre&#xe7;os">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Pauta de pre&#xe7;os"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemResgateCart&#xe3;oFidelidade">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Resgate cart&#xe3;o fidelidade"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemSair">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
-                  <KeyStroke key="Ctrl+Alt+F4"/>
+                  <KeyStroke key="Alt+F14"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Sair"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemSairActionPerformed"/>
-              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -110,33 +1049,471 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Compras"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCota&#xe7;&#xf5;esDeCompra">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cota&#xe7;&#xf5;es de compra"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPedidosDeCompra">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pedidos de compra"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRequisi&#xe7;&#xf5;esDeCompra">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Requisi&#xe7;&#xf5;es de compra"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemRequisi&#xe7;&#xf5;esDeCompraActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCota&#xe7;&#xf5;esDeCompra1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cota&#xe7;&#xf5;es de Compra"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu3">
+        <Menu class="javax.swing.JMenu" name="jMenuProdu&#xe7;&#xe3;o">
           <Properties>
             <Property name="text" type="java.lang.String" value="Produ&#xe7;&#xe3;o"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemFichasT&#xe9;cnicas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fichas t&#xe9;cnicas"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRegistroDeProdu&#xe7;&#xe3;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Registro de produ&#xe7;&#xe3;o"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator3">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemListagemDeFichasT&#xe9;cnicas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listagem de fichas t&#xe9;cnicas"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemListagemDeRegistrosDeProdu&#xe7;&#xe3;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listagem de registros de produ&#xe7;&#xe3;o"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemListagemDeSepara&#xe7;&#xe3;oDeInsumos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listagem de separa&#xe7;&#xe3;o de insumos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemListagemPoss&#xed;velDeProdu&#xe7;&#xe3;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listagem poss&#xed;vel de produ&#xe7;&#xe3;o"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu2">
+        <Menu class="javax.swing.JMenu" name="jMenuVendas">
           <Properties>
             <Property name="text" type="java.lang.String" value="Vendas"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConsigna&#xe7;&#xe3;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Consigna&#xe7;&#xe3;o"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemContratos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Contratos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemDevolu&#xe7;&#xf5;es">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Devolu&#xe7;&#xf5;es"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemDevolu&#xe7;&#xf5;esActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasN&#xe3;oRealizadas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vendas n&#xe3;o realizadas"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator4">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemDavOS">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dav OS"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemOr&#xe7;amentos">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+O"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Or&#xe7;amentos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPedidosDeVenda">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Alt+V"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Pedidos de Venda"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPr&#xe9;Vendas">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+R"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Pr&#xe9;-vendas"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator5">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemOr&#xe7;amentosDeFaturamento">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Alt+O"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Or&#xe7;amentos de Faturamento"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemPedidosDeFaturamento">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Alt+P"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Pedidos de Faturamento"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator6">
+            </MenuItem>
+            <Menu class="javax.swing.JMenu" name="jMenuRelat&#xf3;rioDeVendas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Relat&#xf3;rio de vendas"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCarteiraDePedidos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Carteira de pedidos"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemClientesSemVendas">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Clientes sem vendas"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemComiss&#xf5;esPorVendas">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Comiss&#xf5;es por vendedor"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCurvaABCDeClientes">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Curva ABC de clientes"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCurvaABCDeProdutos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Curva ABC de produtos"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemLibera&#xe7;&#xe3;oPorSupervisor">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Libera&#xe7;&#xe3;o por supervisor"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemProdutosSemVenda">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Produtos sem venda"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRankingDeVendasELucratividade">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ranking de vendas e lucratividade"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemReajustesNosContratos">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Reajustes nos contratos"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemTicketM&#xe9;dio">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ticket m&#xe9;dio"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator7">
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPDVCanceladas">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas PDV canceladas"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPDVPorHora">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas PDV por hora"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPDVPorTributa&#xe7;&#xe3;o">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas PDV por tributa&#xe7;&#xe3;o"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorPDV">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por PDV"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator8">
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasAbaixoDoPre&#xe7;oM&#xed;nimo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas abaixo do pre&#xe7;o m&#xed;nimo"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasDeKit">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas de kit"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasDeProdutoNoPer&#xed;odo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas de produto no per&#xed;odo"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasDeProdutoPorGrade">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas de produto por grade"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasDeServi&#xe7;oNoPer&#xed;odo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas de servi&#xe7;o no per&#xed;odo"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorAdministradorasDeCart&#xe3;o">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por administradoras de cart&#xe3;o"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorClienteEProduto">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por cliente e produto"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorCliente&#xc0;VistaAPrazo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por cliente &#xe0; vista a prazo"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorCondi&#xe7;&#xf5;esDePagamento">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por condi&#xe7;&#xf5;es de pagamento"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorFilial">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por filial"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorLote">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por lote"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendaPorNotaFiscal">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por nota fiscal"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorTurno">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por turno"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendasPorVendedor">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas por vendedor"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="jMenuItemVendas&#xc0;VistaEAPrazo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vendas &#xe0; vista e a prazo"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+          </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu5">
+        <Menu class="javax.swing.JMenu" name="jMenuOrdemDeServi&#xe7;o">
           <Properties>
             <Property name="text" type="java.lang.String" value="Ordem de Servi&#xe7;o"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemOrdensDeServi&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ordens de servi&#xe7;o"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator9">
+              <Properties>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemListagemDeOrdensDeServi&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listagem de ordens de servi&#xe7;o"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemListagemDeProdutosServi&#xe7;os">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listagem de produtos/servi&#xe7;os"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemListagemDeServi&#xe7;osPorT&#xe9;cnico">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Listagem de servi&#xe7;os por t&#xe9;cnico"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu6">
+        <Menu class="javax.swing.JMenu" name="jMenuNotasFiscais">
           <Properties>
             <Property name="text" type="java.lang.String" value="Notas Fiscais"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAtendimentoDasRequisi&#xe7;&#xf5;esDeTransfer&#xea;ncia">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Atendimento das requisi&#xe7;&#xf5;es de transfer&#xea;ncia"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemConhecimentosDeTransporte">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Conhecimentos de transporte"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCte">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ct-e"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGNREOnline">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="GNRE On-line"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemGNREOnlineActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemGerarPinDaNotaFiscal">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Gerar pin da nota fiscal"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemMDFeSa&#xed;da">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="MDF-e - sa&#xed;da"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator11">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNotaFiscalDeEntrada">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+I"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Nota fiscal de entrada"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNotaFiscalDePedidosDeFaturamento">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nota fiscal de pedidos de faturamento"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNotaFiscalDePrepara&#xe7;&#xe3;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nota fiscal de prepara&#xe7;&#xe3;o"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNotaFiscalDeSa&#xed;da">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Alt+N"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Nota fiscal de sa&#xed;da"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNotasFiscaisParaDesagrega&#xe7;&#xe3;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Notas fiscais para desagrega&#xe7;&#xe3;o"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemRequisi&#xe7;&#xf5;esDeTransfer&#xea;ncia">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Requisi&#xe7;&#xf5;es de transfer&#xea;ncia"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator10">
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemApura&#xe7;&#xe3;oDeFundoDeCombateAPobreza">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Apura&#xe7;&#xe3;o de Fundo de Combate a Pobreza"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemApura&#xe7;&#xe3;oDeJCMSPartilhaDIFALEC8715">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Apura&#xe7;&#xe3;o JCMS Partilha - DIFAL EC 87/15"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemApura&#xe7;&#xe3;oDePISCOFINS">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Apura&#xe7;&#xe3;o de PIS/COFINS"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemApura&#xe7;&#xe3;oDeImpostos">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Apura&#xe7;&#xe3;o de impostos"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemComplementosDeViagens">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Complementos de viagens"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemComprasPorProdutoFornecedor">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Compras por produto/fornecedor"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemEspelhoDeNotaFiscal">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Espelho de nota fiscal"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItemNotasFiscaisNoPer&#xed;odo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Notas fiscais no per&#xed;odo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemNotasFiscaisNoPer&#xed;odoActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu7">
           <Properties>
             <Property name="text" type="java.lang.String" value="Contabilidade"/>
           </Properties>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu8">
+        <Menu class="javax.swing.JMenu" name="jMenuCRM">
           <Properties>
             <Property name="text" type="java.lang.String" value="CRM"/>
           </Properties>
@@ -170,13 +1547,8 @@
     </Menu>
   </NonVisualComponents>
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1024, 721]"/>
-    </Property>
-    <Property name="size" type="java.awt.Dimension" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-      <Connection code="1024, 768" type="code"/>
-    </Property>
+    <Property name="defaultCloseOperation" type="int" value="0"/>
+    <Property name="alwaysOnTop" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
@@ -200,17 +1572,23 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
-          <Component id="jLayeredPane1" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
               <Component id="jLayeredPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jTabbedPane1" pref="718" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -222,7 +1600,7 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="jButtonClientes" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jButtonFornecedores" min="-2" max="-2" attributes="0"/>
@@ -254,34 +1632,33 @@
                   <Component id="jButtonContasAReceber" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jButtonNavegaçãoRápida" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButtonSair" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="jButtonNavegaçãoRápida" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonContasAReceber" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonContasAPagar" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonBancos" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonCaixa" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonNotaFiscalDeSaída" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonNotaFiscalDeEntrada" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonPreVendas" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonPedidosDeVenda" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonPedidosDeFaturamento" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonOrçamentos" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonDevoluções" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="jButtonPedidosDeCompras" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonProdutos" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonFornecedores" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jButtonClientes" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="0" pref="5" max="32767" attributes="0"/>
+              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                  <Component id="jButtonSair" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonNavegaçãoRápida" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonContasAReceber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonContasAPagar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonBancos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonCaixa" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonNotaFiscalDeSaída" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonNotaFiscalDeEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonPreVendas" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonPedidosDeVenda" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonPedidosDeFaturamento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonOrçamentos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonDevoluções" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonPedidosDeCompras" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButtonClientes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonFornecedores" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonProdutos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -290,10 +1667,7 @@
         <Component class="javax.swing.JButton" name="jButtonClientes">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/Drive48.png"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Clientes"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -301,8 +1675,6 @@
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jButtonFornecedores"/>
             </Property>
-            <Property name="verticalAlignment" type="int" value="3"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonClientesActionPerformed"/>
@@ -311,10 +1683,7 @@
         <Component class="javax.swing.JButton" name="jButtonFornecedores">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/Drive48.png"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Fornecedores"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -322,8 +1691,6 @@
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jButtonFornecedores"/>
             </Property>
-            <Property name="verticalAlignment" type="int" value="3"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonFornecedoresActionPerformed"/>
@@ -332,10 +1699,7 @@
         <Component class="javax.swing.JButton" name="jButtonProdutos">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
-            </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/Drive48.png"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Produtos"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -343,8 +1707,6 @@
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jButtonFornecedores"/>
             </Property>
-            <Property name="verticalAlignment" type="int" value="3"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonProdutosActionPerformed"/>
@@ -353,19 +1715,14 @@
         <Component class="javax.swing.JButton" name="jButtonPedidosDeCompras">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/Imagens/Drive48.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Pedidos de Compra"/>
+            <Property name="text" type="java.lang.String" value="Pedidos &#xa;de compras" noResource="true"/>
             <Property name="alignmentY" type="float" value="0.0"/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
               <ComponentRef name="jButtonFornecedores"/>
             </Property>
-            <Property name="verticalAlignment" type="int" value="3"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPedidosDeComprasActionPerformed"/>
@@ -374,7 +1731,7 @@
         <Component class="javax.swing.JButton" name="jButtonDevolu&#xe7;&#xf5;es">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Devolu&#xe7;&#xf5;es"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -390,7 +1747,7 @@
         <Component class="javax.swing.JButton" name="jButtonOr&#xe7;amentos">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Or&#xe7;amentos"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -406,7 +1763,7 @@
         <Component class="javax.swing.JButton" name="jButtonPedidosDeFaturamento">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pedidos de faturamento"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -422,7 +1779,7 @@
         <Component class="javax.swing.JButton" name="jButtonPedidosDeVenda">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pedidos de venda"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -438,7 +1795,7 @@
         <Component class="javax.swing.JButton" name="jButtonPreVendas">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Pr&#xe9;-vendas"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -454,7 +1811,7 @@
         <Component class="javax.swing.JButton" name="jButtonNotaFiscalDeEntrada">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nota fiscal de entrada"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -470,7 +1827,7 @@
         <Component class="javax.swing.JButton" name="jButtonNotaFiscalDeSa&#xed;da">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nota fiscal de sa&#xed;da"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -486,7 +1843,7 @@
         <Component class="javax.swing.JButton" name="jButtonCaixa">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Caixa"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -502,7 +1859,7 @@
         <Component class="javax.swing.JButton" name="jButtonBancos">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Bancos"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -518,7 +1875,7 @@
         <Component class="javax.swing.JButton" name="jButtonContasAPagar">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Contas a pagar"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -534,7 +1891,7 @@
         <Component class="javax.swing.JButton" name="jButtonContasAReceber">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Contas a receber"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -550,7 +1907,7 @@
         <Component class="javax.swing.JButton" name="jButtonNavega&#xe7;&#xe3;oR&#xe1;pida">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="SansSerif" size="10" style="1"/>
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Navega&#xe7;&#xe3;o r&#xe1;pida"/>
             <Property name="alignmentY" type="float" value="0.0"/>
@@ -563,45 +1920,47 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonNavega&#xe7;&#xe3;oR&#xe1;pidaActionPerformed"/>
           </Events>
         </Component>
+        <Component class="javax.swing.JButton" name="jButtonSair">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI Semibold" size="10" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sair"/>
+            <Property name="alignmentY" type="float" value="0.0"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="jButtonFornecedores"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonSairActionPerformed"/>
+          </Events>
+        </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+    <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="cc" green="ff" red="cc" type="rgb"/>
-        </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
-            <BevelBorder>
-              <Color PropertyName="highlightOuter" blue="ff" green="ff" red="99" type="rgb"/>
-              <Color PropertyName="highlightInner" blue="cc" green="ff" red="cc" type="rgb"/>
-              <Color PropertyName="shadowOuter" blue="cc" green="ff" red="ff" type="rgb"/>
-              <Color PropertyName="shadowInner" blue="ff" green="99" red="99" type="rgb"/>
-            </BevelBorder>
+            <BevelBorder/>
           </Border>
         </Property>
-        <Property name="autoscrolls" type="boolean" value="true"/>
-        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Cursor Padr&#xe3;o"/>
-        </Property>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="SansSerif" size="18" style="0"/>
-        </Property>
-        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[800, 600]"/>
-        </Property>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[1024, 768]"/>
-        </Property>
       </Properties>
-      <Events>
-        <EventHandler event="componentHidden" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jTabbedPane1ComponentHidden"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-      </AuxValues>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="1715" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="860" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
     </Container>
+    <Component class="javax.swing.JScrollBar" name="jScrollBar1">
+    </Component>
   </SubComponents>
 </Form>

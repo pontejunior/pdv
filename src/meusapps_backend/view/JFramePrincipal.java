@@ -5,25 +5,17 @@
  */
 package meusapps_backend.view;
 
-import javax.swing.JTabbedPane;
-
 /**
  *
  * @author pontejunior
  */
 public class JFramePrincipal extends javax.swing.JFrame {
 
-    JPanelClientes jPanelClientes = new JPanelClientes();
-    JInternalFrameClientes jInternalFrameClientes = new JInternalFrameClientes();
-    JInternalFrameFornecedores jInternalFrameFornecedores = new JInternalFrameFornecedores();
-    
-    
     /**
      * Creates new form JFramePrincipal
      */
     public JFramePrincipal() {
         initComponents();
-         
     }
 
     /**
@@ -52,99 +44,339 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jButtonContasAPagar = new javax.swing.JButton();
         jButtonContasAReceber = new javax.swing.JButton();
         jButtonNavegaçãoRápida = new javax.swing.JButton();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jButtonSair = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollBar1 = new javax.swing.JScrollBar();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuCadastro = new javax.swing.JMenu();
         jMenuItemClientes = new javax.swing.JMenuItem();
         jMenuItemCompradores = new javax.swing.JMenuItem();
-        jMenuItemEntregadores = new javax.swing.JMenuItem();
+        jMenuItemEntregador = new javax.swing.JMenuItem();
         jMenuItemFabricantes = new javax.swing.JMenuItem();
         jMenuItemFornecedores = new javax.swing.JMenuItem();
-        jMenuItemGarcom = new javax.swing.JMenuItem();
+        jMenuItemGarçom = new javax.swing.JMenuItem();
         jMenuItemMotoristas = new javax.swing.JMenuItem();
         jMenuItemPortadores = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
-        jMenuItem10 = new javax.swing.JMenuItem();
-        jMenuItem11 = new javax.swing.JMenuItem();
-        jMenuItem12 = new javax.swing.JMenuItem();
-        jMenuItem13 = new javax.swing.JMenuItem();
-        jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItemProdutos = new javax.swing.JMenuItem();
+        jMenuItemServiços = new javax.swing.JMenuItem();
+        jMenuItemTransportadoras = new javax.swing.JMenuItem();
+        jMenuItemTécnicos = new javax.swing.JMenuItem();
+        jMenuOutros = new javax.swing.JMenu();
+        jMenuCrm = new javax.swing.JMenu();
+        jMenuItemCategoria = new javax.swing.JMenuItem();
+        jMenuItemCausaRaiz = new javax.swing.JMenuItem();
+        jMenuItemPrioridade = new javax.swing.JMenuItem();
+        jMenuItemSetor = new javax.swing.JMenuItem();
+        jMenuItemSeveridade = new javax.swing.JMenuItem();
+        jMenuItemTipoDeContato = new javax.swing.JMenuItem();
+        jMenuItemTipoOcorrência = new javax.swing.JMenuItem();
+        jMenuItemTipoRegistro = new javax.swing.JMenuItem();
+        jMenuItemTipoStatus = new javax.swing.JMenuItem();
+        jMenuCteCadastro = new javax.swing.JMenu();
+        jMenuItemParâmetrosCte = new javax.swing.JMenuItem();
+        jMenuItemSériesCte = new javax.swing.JMenuItem();
+        jMenuCteMDFe = new javax.swing.JMenu();
+        jMenuItemMeiosDeTransportes = new javax.swing.JMenuItem();
+        jMenuEmpresasEFiliais = new javax.swing.JMenu();
+        jMenuItemEmpresas = new javax.swing.JMenuItem();
+        jMenuEndereços = new javax.swing.JMenu();
+        jMenuItemCEPsNovos = new javax.swing.JMenuItem();
+        jMenuItemCidades = new javax.swing.JMenuItem();
+        jMenuItemEstados = new javax.swing.JMenuItem();
+        jMenuItemPaíses = new javax.swing.JMenuItem();
+        jMenuItemRegiões = new javax.swing.JMenuItem();
+        jMenuEntidades = new javax.swing.JMenu();
+        jMenuItemConfiguraçãoCartãoFidelidade = new javax.swing.JMenuItem();
+        jMenuItemTiposDeHistóricoDeContato = new javax.swing.JMenuItem();
+        jMenuEstoque = new javax.swing.JMenu();
+        jMenuItemFamíliasDeProdutos = new javax.swing.JMenuItem();
+        jMenuItemFichaTécnicaDeDesagregação = new javax.swing.JMenuItem();
+        jMenuItemGruposDeProduto = new javax.swing.JMenuItem();
+        jMenuItemImagens = new javax.swing.JMenuItem();
+        jMenuItemModelosDeGradeDeProduto = new javax.swing.JMenuItem();
+        jMenuItemMotivosDeAjusteDeEstoque = new javax.swing.JMenuItem();
+        jMenuItemUnidadesDeMedida = new javax.swing.JMenuItem();
+        jMenuExpedição = new javax.swing.JMenu();
+        jMenuItemHistóricoDeEntrega = new javax.swing.JMenuItem();
+        jMenuItemRotas = new javax.swing.JMenuItem();
+        jMenuFerramentas = new javax.swing.JMenu();
+        jMenuItemEDI = new javax.swing.JMenuItem();
+        jMenuItemTextosGenéricos = new javax.swing.JMenuItem();
+        jMenuFinanceiroCad = new javax.swing.JMenu();
+        jMenuItemAdministradorasDeCartão = new javax.swing.JMenuItem();
+        jMenuItemBancos = new javax.swing.JMenuItem();
+        jMenuItemBandeirasDeCartão = new javax.swing.JMenuItem();
+        jMenuItemCentrosDeCustos = new javax.swing.JMenuItem();
+        jMenuItemConfiguraçõesCentrosDeCusto = new javax.swing.JMenuItem();
+        jMenuItemContasCorrentes = new javax.swing.JMenuItem();
+        jMenuItemCotaçãoDeMoedas = new javax.swing.JMenuItem();
+        jMenuItemCódigosReduzidosCentrosDeCusto = new javax.swing.JMenuItem();
+        jMenuItemExceçõesDoProcessamentoDoRetorno = new javax.swing.JMenuItem();
+        jMenuItemFeriados = new javax.swing.JMenuItem();
+        jMenuItemMotivosDeBaixaDoFinanceiro = new javax.swing.JMenuItem();
+        jMenuItemPlanoDeContasGerencial = new javax.swing.JMenuItem();
+        jMenuItemTiposDeCobrança = new javax.swing.JMenuItem();
+        jMenuItemTiposDeComissão = new javax.swing.JMenuItem();
+        jMenuItemTiposDeDocumentosFinanceiro = new javax.swing.JMenuItem();
+        jMenuGNREOnline = new javax.swing.JMenu();
+        jMenuItemParâmentrosGNREOnline = new javax.swing.JMenuItem();
+        jMenuMDFe = new javax.swing.JMenu();
+        jMenuItemParâmetrosMDFe = new javax.swing.JMenuItem();
+        jMenuItemSériesMDFe = new javax.swing.JMenuItem();
+        jMenuModelosDeImpressão = new javax.swing.JMenu();
+        jMenuItemConfiguraçãoDeImpressoraNãoFiscal = new javax.swing.JMenuItem();
+        jMenuItemModeloDeLaudoTécnico = new javax.swing.JMenuItem();
+        jMenuItemModeloDeReciboDeEntregaDeEquipamento = new javax.swing.JMenuItem();
+        jMenuItemModelosDeDAVOS = new javax.swing.JMenuItem();
+        jMenuItemModelosDeCasoDoCRM = new javax.swing.JMenuItem();
+        jMenuItemModelosDeDevolução = new javax.swing.JMenuItem();
+        jMenuItemModelosDeDuplicata = new javax.swing.JMenuItem();
+        jMenuItemModelosDeEtiquetaDeCódigoDeBarras = new javax.swing.JMenuItem();
+        jMenuItemModelosDeEtiquetaDeCódigoDeBarrasScript = new javax.swing.JMenuItem();
+        jMenuItemModelosDeEtiquetaDeMalaDireita = new javax.swing.JMenuItem();
+        jMenuItemModelosDeEtiquetaDeVolumesDeNotaFiscal = new javax.swing.JMenuItem();
+        jMenuItemModelosDeNotaFiscal = new javax.swing.JMenuItem();
+        jMenuItemModelosDeOrdemDeServiço = new javax.swing.JMenuItem();
+        jMenuItemModelosDeOrçamento = new javax.swing.JMenuItem();
+        jMenuItemModelosDeOrçamentoDeFaturamento = new javax.swing.JMenuItem();
+        jMenuItemModelosDePedidoDeCompra = new javax.swing.JMenuItem();
+        jMenuItemModelosDePedidoDeFaturamento = new javax.swing.JMenuItem();
+        jMenuItemModelosDePedidoDeVenda = new javax.swing.JMenuItem();
+        jMenuItemModelosDeReciboDePagamento = new javax.swing.JMenuItem();
+        jMenuNFCeSAT = new javax.swing.JMenu();
+        jMenuItemConsultaCFe = new javax.swing.JMenuItem();
+        jMenuItemConsultaNFCe = new javax.swing.JMenuItem();
+        jMenuItemParâmetrosNFCeSAT = new javax.swing.JMenuItem();
+        jMenuNotasFiscaisCadastro = new javax.swing.JMenu();
+        jMenuItemAlíquotasPorEstado = new javax.swing.JMenuItem();
+        jMenuItemCEST = new javax.swing.JMenuItem();
+        jMenuItemEnquadramentosDeIPI = new javax.swing.JMenuItem();
+        jMenuItemIbpt = new javax.swing.JMenuItem();
+        jMenuItemNaturezasDeOperaçãoETributaçõesEspeciais = new javax.swing.JMenuItem();
+        jMenuItemNaturezasDeOperaçãoETributaçõesEspeciaisPorEstado = new javax.swing.JMenuItem();
+        jMenuItemNcms = new javax.swing.JMenuItem();
+        jMenuItemOperaçõesFiscais = new javax.swing.JMenuItem();
+        jMenuItemParâmetrosDaNFe = new javax.swing.JMenuItem();
+        jMenuItemParâmetrosDaNFSe = new javax.swing.JMenuItem();
+        jMenuItemTabelasDeMVA = new javax.swing.JMenuItem();
+        jMenuItemTabelasDeConversãoDeCSTCSOSN = new javax.swing.JMenuItem();
+        jMenuItemZonaFrancaALC = new javax.swing.JMenuItem();
+        jMenuOrdemDeServiçoCadastro = new javax.swing.JMenu();
+        jMenuItemConfiguraçãoDaOrdemDeServiço = new javax.swing.JMenuItem();
+        jMenuItemObjetos = new javax.swing.JMenuItem();
+        jMenuItemPrioridades = new javax.swing.JMenuItem();
+        jMenuItemTiposDeEvento = new javax.swing.JMenuItem();
+        jMenuItemTiposDeProblema = new javax.swing.JMenuItem();
+        jMenuItemÁreas = new javax.swing.JMenuItem();
+        jMenuPDV = new javax.swing.JMenu();
+        jMenuItemAlterarSequenciaNumeraçãoDeDocumentos = new javax.swing.JMenuItem();
+        jMenuItemCancelamentoDeOperação = new javax.swing.JMenuItem();
+        jMenuItemConsultaOperações = new javax.swing.JMenuItem();
+        jMenuItemExtratoDoCartãoFidelidade = new javax.swing.JMenuItem();
+        jMenuItemImagensPromocionais = new javax.swing.JMenuItem();
+        jMenuItemMeiosDePagamento = new javax.swing.JMenuItem();
+        jMenuItemMotivosDeSangriaSuprimento = new javax.swing.JMenuItem();
+        jMenuItemOperaçõesComPendênciaDeProcessamento = new javax.swing.JMenuItem();
+        jMenuItemReduçãoZ = new javax.swing.JMenuItem();
+        jMenuImportaçãoDoAtocotepe1704 = new javax.swing.JMenu();
+        jMenuItemAnálise = new javax.swing.JMenuItem();
+        jMenuItemOperações = new javax.swing.JMenuItem();
+        jMenuItemReduçõesZ = new javax.swing.JMenuItem();
+        jMenu3MovimentoECF = new javax.swing.JMenu();
+        jMenuItemRequisitos0112 = new javax.swing.JMenuItem();
+        jMenuSPED = new javax.swing.JMenu();
+        jMenuItemAjusteApuraçãoIcms = new javax.swing.JMenuItem();
+        jMenuItemAjusteDocumentoFiscal = new javax.swing.JMenuItem();
+        jMenuItemAjusteApuraçãoImpostos = new javax.swing.JMenuItem();
+        jMenuItemApuraçãoImpostosSPED = new javax.swing.JMenuItem();
+        jMenuItemCréditosDeEstímulo = new javax.swing.JMenuItem();
+        jMenuItemCódigosDeReceitaDoICMS = new javax.swing.JMenuItem();
+        JMenuItemFundoDeCombateAPobreza = new javax.swing.JMenuItem();
+        jMenuItemInventários = new javax.swing.JMenuItem();
+        jMenuItemObrigaçõesDoICMSRecolhidoRecolherDIFALEC8715 = new javax.swing.JMenuItem();
+        jMenuItemObservaçõesLançamentoFiscal = new javax.swing.JMenuItem();
+        jMenuItemOutrosLançamentosPorFilial = new javax.swing.JMenuItem();
+        jMenuItemParâmetrosDoSPEDFiscal = new javax.swing.JMenuItem();
+        jMenuItemSubApuraçãoDoICMS = new javax.swing.JMenuItem();
+        jMenuTabelaDePreços = new javax.swing.JMenu();
+        jMenuItemConfiguraçõesDoPainelDePreços = new javax.swing.JMenuItem();
+        jMenuItemTabelasDePreços = new javax.swing.JMenuItem();
+        jMenuUnichef = new javax.swing.JMenu();
+        jMenuItemCaptação = new javax.swing.JMenuItem();
+        jMenuItemCombosUnichef = new javax.swing.JMenuItem();
+        jMenuItemGruposDeProdutosUnichef = new javax.swing.JMenuItem();
+        jMenuItemLançamentoAutomático = new javax.swing.JMenuItem();
+        jMenuItemReajusteDePreçosUnichef = new javax.swing.JMenuItem();
+        jMenuItemTaxaDeEntrega = new javax.swing.JMenuItem();
+        jMenuImpressão = new javax.swing.JMenu();
+        jMenuItemGrupoDeImpressoras = new javax.swing.JMenuItem();
+        jMenuItemPontosDeImpressão = new javax.swing.JMenuItem();
+        jMenuItemTiposDeImpressão = new javax.swing.JMenuItem();
+        jMenuRelatóriosUnichef = new javax.swing.JMenu();
+        jMenuItemRelatórioDeCombos = new javax.swing.JMenuItem();
+        jMenuItemRelatórioDeEntregas = new javax.swing.JMenuItem();
+        jMenuUsuários = new javax.swing.JMenu();
+        jMenuItemPerfisDeUsuário = new javax.swing.JMenuItem();
+        jMenuItemUsuários = new javax.swing.JMenuItem();
+        jMenuVendasCadastro = new javax.swing.JMenu();
+        jMenuItemCondiçõesDePagamento = new javax.swing.JMenuItem();
+        jMenuItemMotivosDeDesconto = new javax.swing.JMenuItem();
+        jMenuItemPromoções = new javax.swing.JMenuItem();
+        jMenuItemTiposDeContato = new javax.swing.JMenuItem();
+        jMenuItemTiposDePedido = new javax.swing.JMenuItem();
+        jMenuRelatórios = new javax.swing.JMenu();
+        jMenuItemAniversariantes = new javax.swing.JMenuItem();
+        jMenuItemExtratoDoCartãoFidelidadeRelatórios = new javax.swing.JMenuItem();
+        jMenuItemMalaDireita = new javax.swing.JMenuItem();
+        jMenuItemPautaDePreços = new javax.swing.JMenuItem();
+        jMenuItemResgateCartãoFidelidade = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuItemSair = new javax.swing.JMenuItem();
         jMenuCompras = new javax.swing.JMenu();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
+        jMenuItemCotaçõesDeCompra = new javax.swing.JMenuItem();
+        jMenuItemPedidosDeCompra = new javax.swing.JMenuItem();
+        jMenuItemRequisiçõesDeCompra = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemCotaçõesDeCompra1 = new javax.swing.JMenuItem();
+        jMenuProdução = new javax.swing.JMenu();
+        jMenuItemFichasTécnicas = new javax.swing.JMenuItem();
+        jMenuItemRegistroDeProdução = new javax.swing.JMenuItem();
+        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemListagemDeFichasTécnicas = new javax.swing.JMenuItem();
+        jMenuItemListagemDeRegistrosDeProdução = new javax.swing.JMenuItem();
+        jMenuItemListagemDeSeparaçãoDeInsumos = new javax.swing.JMenuItem();
+        jMenuItemListagemPossívelDeProdução = new javax.swing.JMenuItem();
+        jMenuVendas = new javax.swing.JMenu();
+        jMenuItemConsignação = new javax.swing.JMenuItem();
+        jMenuItemContratos = new javax.swing.JMenuItem();
+        jMenuItemDevoluções = new javax.swing.JMenuItem();
+        jMenuItemVendasNãoRealizadas = new javax.swing.JMenuItem();
+        jSeparator4 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemDavOS = new javax.swing.JMenuItem();
+        jMenuItemOrçamentos = new javax.swing.JMenuItem();
+        jMenuItemPedidosDeVenda = new javax.swing.JMenuItem();
+        jMenuItemPréVendas = new javax.swing.JMenuItem();
+        jSeparator5 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemOrçamentosDeFaturamento = new javax.swing.JMenuItem();
+        jMenuItemPedidosDeFaturamento = new javax.swing.JMenuItem();
+        jSeparator6 = new javax.swing.JPopupMenu.Separator();
+        jMenuRelatórioDeVendas = new javax.swing.JMenu();
+        jMenuItemCarteiraDePedidos = new javax.swing.JMenuItem();
+        jMenuItemClientesSemVendas = new javax.swing.JMenuItem();
+        jMenuItemComissõesPorVendas = new javax.swing.JMenuItem();
+        jMenuItemCurvaABCDeClientes = new javax.swing.JMenuItem();
+        jMenuItemCurvaABCDeProdutos = new javax.swing.JMenuItem();
+        jMenuItemLiberaçãoPorSupervisor = new javax.swing.JMenuItem();
+        jMenuItemProdutosSemVenda = new javax.swing.JMenuItem();
+        jMenuItemRankingDeVendasELucratividade = new javax.swing.JMenuItem();
+        jMenuItemReajustesNosContratos = new javax.swing.JMenuItem();
+        jMenuItemTicketMédio = new javax.swing.JMenuItem();
+        jSeparator7 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemVendasPDVCanceladas = new javax.swing.JMenuItem();
+        jMenuItemVendasPDVPorHora = new javax.swing.JMenuItem();
+        jMenuItemVendasPDVPorTributação = new javax.swing.JMenuItem();
+        jMenuItemVendasPorPDV = new javax.swing.JMenuItem();
+        jSeparator8 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemVendasAbaixoDoPreçoMínimo = new javax.swing.JMenuItem();
+        jMenuItemVendasDeKit = new javax.swing.JMenuItem();
+        jMenuItemVendasDeProdutoNoPeríodo = new javax.swing.JMenuItem();
+        jMenuItemVendasDeProdutoPorGrade = new javax.swing.JMenuItem();
+        jMenuItemVendasDeServiçoNoPeríodo = new javax.swing.JMenuItem();
+        jMenuItemVendasPorAdministradorasDeCartão = new javax.swing.JMenuItem();
+        jMenuItemVendasPorClienteEProduto = new javax.swing.JMenuItem();
+        jMenuItemVendasPorClienteÀVistaAPrazo = new javax.swing.JMenuItem();
+        jMenuItemVendasPorCondiçõesDePagamento = new javax.swing.JMenuItem();
+        jMenuItemVendasPorFilial = new javax.swing.JMenuItem();
+        jMenuItemVendasPorLote = new javax.swing.JMenuItem();
+        jMenuItemVendaPorNotaFiscal = new javax.swing.JMenuItem();
+        jMenuItemVendasPorTurno = new javax.swing.JMenuItem();
+        jMenuItemVendasPorVendedor = new javax.swing.JMenuItem();
+        jMenuItemVendasÀVistaEAPrazo = new javax.swing.JMenuItem();
+        jMenuOrdemDeServiço = new javax.swing.JMenu();
+        jMenuItemOrdensDeServiço = new javax.swing.JMenuItem();
+        jSeparator9 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemListagemDeOrdensDeServiço = new javax.swing.JMenuItem();
+        jMenuItemListagemDeProdutosServiços = new javax.swing.JMenuItem();
+        jMenuItemListagemDeServiçosPorTécnico = new javax.swing.JMenuItem();
+        jMenuNotasFiscais = new javax.swing.JMenu();
+        jMenuItemAtendimentoDasRequisiçõesDeTransferência = new javax.swing.JMenuItem();
+        jMenuItemConhecimentosDeTransporte = new javax.swing.JMenuItem();
+        jMenuItemCte = new javax.swing.JMenuItem();
+        jMenuItemGNREOnline = new javax.swing.JMenuItem();
+        jMenuItemGerarPinDaNotaFiscal = new javax.swing.JMenuItem();
+        jMenuItemMDFeSaída = new javax.swing.JMenuItem();
+        jSeparator11 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemNotaFiscalDeEntrada = new javax.swing.JMenuItem();
+        jMenuItemNotaFiscalDePedidosDeFaturamento = new javax.swing.JMenuItem();
+        jMenuItemNotaFiscalDePreparação = new javax.swing.JMenuItem();
+        jMenuItemNotaFiscalDeSaída = new javax.swing.JMenuItem();
+        jMenuItemNotasFiscaisParaDesagregação = new javax.swing.JMenuItem();
+        jMenuItemRequisiçõesDeTransferência = new javax.swing.JMenuItem();
+        jSeparator10 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemApuraçãoDeFundoDeCombateAPobreza = new javax.swing.JMenuItem();
+        jMenuItemApuraçãoDeJCMSPartilhaDIFALEC8715 = new javax.swing.JMenuItem();
+        jMenuItemApuraçãoDePISCOFINS = new javax.swing.JMenuItem();
+        jMenuItemApuraçãoDeImpostos = new javax.swing.JMenuItem();
+        jMenuItemComplementosDeViagens = new javax.swing.JMenuItem();
+        jMenuItemComprasPorProdutoFornecedor = new javax.swing.JMenuItem();
+        jMenuItemEspelhoDeNotaFiscal = new javax.swing.JMenuItem();
+        jMenuItemNotasFiscaisNoPeríodo = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
-        jMenu8 = new javax.swing.JMenu();
+        jMenuCRM = new javax.swing.JMenu();
         jMenu9 = new javax.swing.JMenu();
         jMenuFinanceiro = new javax.swing.JMenu();
         jMenu11 = new javax.swing.JMenu();
         jMenu12 = new javax.swing.JMenu();
         jMenu13 = new javax.swing.JMenu();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1024, 721));
-        setSize(1024, 768);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setAlwaysOnTop(true);
 
-        jButtonClientes.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
-        jButtonClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
+        jButtonClientes.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonClientes.setText("Clientes");
         jButtonClientes.setAlignmentY(0.0F);
         jButtonClientes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonClientes.setNextFocusableComponent(jButtonFornecedores);
-        jButtonClientes.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jButtonClientes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonClientesActionPerformed(evt);
             }
         });
 
-        jButtonFornecedores.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
-        jButtonFornecedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
+        jButtonFornecedores.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonFornecedores.setText("Fornecedores");
         jButtonFornecedores.setAlignmentY(0.0F);
         jButtonFornecedores.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonFornecedores.setNextFocusableComponent(jButtonFornecedores);
-        jButtonFornecedores.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jButtonFornecedores.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonFornecedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonFornecedoresActionPerformed(evt);
             }
         });
 
-        jButtonProdutos.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
-        jButtonProdutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
+        jButtonProdutos.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonProdutos.setText("Produtos");
         jButtonProdutos.setAlignmentY(0.0F);
         jButtonProdutos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonProdutos.setNextFocusableComponent(jButtonFornecedores);
-        jButtonProdutos.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jButtonProdutos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonProdutos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonProdutosActionPerformed(evt);
             }
         });
 
-        jButtonPedidosDeCompras.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
-        jButtonPedidosDeCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Drive48.png"))); // NOI18N
-        jButtonPedidosDeCompras.setText("Pedidos de Compra");
+        jButtonPedidosDeCompras.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
+        jButtonPedidosDeCompras.setText("Pedidos \nde compras"); // NOI18N
         jButtonPedidosDeCompras.setAlignmentY(0.0F);
         jButtonPedidosDeCompras.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButtonPedidosDeCompras.setNextFocusableComponent(jButtonFornecedores);
-        jButtonPedidosDeCompras.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jButtonPedidosDeCompras.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButtonPedidosDeCompras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonPedidosDeComprasActionPerformed(evt);
             }
         });
 
-        jButtonDevoluções.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonDevoluções.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonDevoluções.setText("Devoluções");
         jButtonDevoluções.setAlignmentY(0.0F);
         jButtonDevoluções.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -155,7 +387,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonOrçamentos.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonOrçamentos.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonOrçamentos.setText("Orçamentos");
         jButtonOrçamentos.setAlignmentY(0.0F);
         jButtonOrçamentos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -166,7 +398,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonPedidosDeFaturamento.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonPedidosDeFaturamento.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonPedidosDeFaturamento.setText("Pedidos de faturamento");
         jButtonPedidosDeFaturamento.setAlignmentY(0.0F);
         jButtonPedidosDeFaturamento.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -177,7 +409,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonPedidosDeVenda.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonPedidosDeVenda.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonPedidosDeVenda.setText("Pedidos de venda");
         jButtonPedidosDeVenda.setAlignmentY(0.0F);
         jButtonPedidosDeVenda.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -188,7 +420,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonPreVendas.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonPreVendas.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonPreVendas.setText("Pré-vendas");
         jButtonPreVendas.setAlignmentY(0.0F);
         jButtonPreVendas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -199,7 +431,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonNotaFiscalDeEntrada.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonNotaFiscalDeEntrada.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonNotaFiscalDeEntrada.setText("Nota fiscal de entrada");
         jButtonNotaFiscalDeEntrada.setAlignmentY(0.0F);
         jButtonNotaFiscalDeEntrada.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -210,7 +442,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonNotaFiscalDeSaída.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonNotaFiscalDeSaída.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonNotaFiscalDeSaída.setText("Nota fiscal de saída");
         jButtonNotaFiscalDeSaída.setAlignmentY(0.0F);
         jButtonNotaFiscalDeSaída.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -221,7 +453,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonCaixa.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonCaixa.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonCaixa.setText("Caixa");
         jButtonCaixa.setAlignmentY(0.0F);
         jButtonCaixa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -232,7 +464,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonBancos.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonBancos.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonBancos.setText("Bancos");
         jButtonBancos.setAlignmentY(0.0F);
         jButtonBancos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -243,7 +475,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonContasAPagar.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonContasAPagar.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonContasAPagar.setText("Contas a pagar");
         jButtonContasAPagar.setAlignmentY(0.0F);
         jButtonContasAPagar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -254,7 +486,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonContasAReceber.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonContasAReceber.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonContasAReceber.setText("Contas a receber");
         jButtonContasAReceber.setAlignmentY(0.0F);
         jButtonContasAReceber.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -265,7 +497,7 @@ public class JFramePrincipal extends javax.swing.JFrame {
             }
         });
 
-        jButtonNavegaçãoRápida.setFont(new java.awt.Font("SansSerif", 1, 10)); // NOI18N
+        jButtonNavegaçãoRápida.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
         jButtonNavegaçãoRápida.setText("Navegação rápida");
         jButtonNavegaçãoRápida.setAlignmentY(0.0F);
         jButtonNavegaçãoRápida.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -273,6 +505,17 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jButtonNavegaçãoRápida.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonNavegaçãoRápidaActionPerformed(evt);
+            }
+        });
+
+        jButtonSair.setFont(new java.awt.Font("Segoe UI Semibold", 1, 10)); // NOI18N
+        jButtonSair.setText("Sair");
+        jButtonSair.setAlignmentY(0.0F);
+        jButtonSair.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButtonSair.setNextFocusableComponent(jButtonFornecedores);
+        jButtonSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSairActionPerformed(evt);
             }
         });
 
@@ -292,13 +535,14 @@ public class JFramePrincipal extends javax.swing.JFrame {
         jLayeredPane1.setLayer(jButtonContasAPagar, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButtonContasAReceber, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jButtonNavegaçãoRápida, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane1.setLayer(jButtonSair, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButtonClientes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonFornecedores)
@@ -330,137 +574,983 @@ public class JFramePrincipal extends javax.swing.JFrame {
                 .addComponent(jButtonContasAReceber)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonNavegaçãoRápida)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonSair))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButtonNavegaçãoRápida, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonContasAReceber, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonContasAPagar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonBancos, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonCaixa, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonNotaFiscalDeSaída, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonNotaFiscalDeEntrada, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonPreVendas, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonPedidosDeVenda, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonPedidosDeFaturamento, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonOrçamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonDevoluções, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButtonPedidosDeCompras)
-                        .addComponent(jButtonProdutos)
-                        .addComponent(jButtonFornecedores))
-                    .addComponent(jButtonClientes))
-                .addGap(0, 5, Short.MAX_VALUE))
+            .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jButtonSair)
+                .addComponent(jButtonNavegaçãoRápida)
+                .addComponent(jButtonContasAReceber)
+                .addComponent(jButtonContasAPagar)
+                .addComponent(jButtonBancos)
+                .addComponent(jButtonCaixa)
+                .addComponent(jButtonNotaFiscalDeSaída)
+                .addComponent(jButtonNotaFiscalDeEntrada)
+                .addComponent(jButtonPreVendas)
+                .addComponent(jButtonPedidosDeVenda)
+                .addComponent(jButtonPedidosDeFaturamento)
+                .addComponent(jButtonOrçamentos)
+                .addComponent(jButtonDevoluções)
+                .addComponent(jButtonPedidosDeCompras))
+            .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jButtonClientes)
+                .addComponent(jButtonFornecedores)
+                .addComponent(jButtonProdutos))
         );
 
-        jTabbedPane1.setBackground(new java.awt.Color(204, 255, 204));
-        jTabbedPane1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(153, 255, 255), new java.awt.Color(204, 255, 204), new java.awt.Color(255, 255, 204), new java.awt.Color(153, 153, 255)));
-        jTabbedPane1.setAutoscrolls(true);
-        jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTabbedPane1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        jTabbedPane1.setMinimumSize(new java.awt.Dimension(800, 600));
-        jTabbedPane1.setPreferredSize(new java.awt.Dimension(1024, 768));
-        jTabbedPane1.addComponentListener(new java.awt.event.ComponentAdapter() {
-            public void componentHidden(java.awt.event.ComponentEvent evt) {
-                jTabbedPane1ComponentHidden(evt);
-            }
-        });
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1715, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 860, Short.MAX_VALUE)
+        );
 
         jMenuCadastro.setText("Cadastros");
 
         jMenuItemClientes.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
         jMenuItemClientes.setText("Clientes");
-        jMenuItemClientes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemClientesActionPerformed(evt);
-            }
-        });
         jMenuCadastro.add(jMenuItemClientes);
 
         jMenuItemCompradores.setText("Compradores");
         jMenuCadastro.add(jMenuItemCompradores);
 
-        jMenuItemEntregadores.setText("Entregadores");
-        jMenuCadastro.add(jMenuItemEntregadores);
+        jMenuItemEntregador.setText("Entregador");
+        jMenuCadastro.add(jMenuItemEntregador);
 
         jMenuItemFabricantes.setText("Fabricantes");
         jMenuCadastro.add(jMenuItemFabricantes);
 
+        jMenuItemFornecedores.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.ALT_MASK));
         jMenuItemFornecedores.setText("Fornecedores");
-        jMenuItemFornecedores.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemFornecedoresActionPerformed(evt);
-            }
-        });
         jMenuCadastro.add(jMenuItemFornecedores);
 
-        jMenuItemGarcom.setText("Garçom");
-        jMenuCadastro.add(jMenuItemGarcom);
+        jMenuItemGarçom.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemGarçom.setText("Garçom");
+        jMenuCadastro.add(jMenuItemGarçom);
 
+        jMenuItemMotoristas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.ALT_MASK));
         jMenuItemMotoristas.setText("Motoristas");
         jMenuCadastro.add(jMenuItemMotoristas);
 
         jMenuItemPortadores.setText("Portadores");
         jMenuCadastro.add(jMenuItemPortadores);
 
-        jMenuItem9.setText("Produtos");
-        jMenuCadastro.add(jMenuItem9);
+        jMenuItemProdutos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemProdutos.setText("Produtos");
+        jMenuCadastro.add(jMenuItemProdutos);
 
-        jMenuItem10.setText("Serviços");
-        jMenuCadastro.add(jMenuItem10);
+        jMenuItemServiços.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemServiços.setText("Serviços");
+        jMenuCadastro.add(jMenuItemServiços);
 
-        jMenuItem11.setText("Transportadoras");
-        jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemTransportadoras.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemTransportadoras.setText("Transportadoras");
+        jMenuCadastro.add(jMenuItemTransportadoras);
+
+        jMenuItemTécnicos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemTécnicos.setText("Técnicos");
+        jMenuCadastro.add(jMenuItemTécnicos);
+
+        jMenuOutros.setText("Outros");
+
+        jMenuCrm.setText("Crm");
+
+        jMenuItemCategoria.setText("Categoria");
+        jMenuCrm.add(jMenuItemCategoria);
+
+        jMenuItemCausaRaiz.setText("Causa raiz");
+        jMenuCrm.add(jMenuItemCausaRaiz);
+
+        jMenuItemPrioridade.setText("Prioridade");
+        jMenuCrm.add(jMenuItemPrioridade);
+
+        jMenuItemSetor.setText("Setor");
+        jMenuCrm.add(jMenuItemSetor);
+
+        jMenuItemSeveridade.setText("Severidade");
+        jMenuCrm.add(jMenuItemSeveridade);
+
+        jMenuItemTipoDeContato.setText("Tipo de contato");
+        jMenuCrm.add(jMenuItemTipoDeContato);
+
+        jMenuItemTipoOcorrência.setText("Tipo ocorrência");
+        jMenuCrm.add(jMenuItemTipoOcorrência);
+
+        jMenuItemTipoRegistro.setText("Tipo registro");
+        jMenuCrm.add(jMenuItemTipoRegistro);
+
+        jMenuItemTipoStatus.setText("Tipo status");
+        jMenuCrm.add(jMenuItemTipoStatus);
+
+        jMenuOutros.add(jMenuCrm);
+
+        jMenuCteCadastro.setText("Ct-e");
+
+        jMenuItemParâmetrosCte.setText("Parâmetros");
+        jMenuItemParâmetrosCte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem11ActionPerformed(evt);
+                jMenuItemParâmetrosCteActionPerformed(evt);
             }
         });
-        jMenuCadastro.add(jMenuItem11);
+        jMenuCteCadastro.add(jMenuItemParâmetrosCte);
 
-        jMenuItem12.setText("Técnicos");
-        jMenuCadastro.add(jMenuItem12);
+        jMenuItemSériesCte.setText("Séries");
+        jMenuCteCadastro.add(jMenuItemSériesCte);
 
-        jMenuItem13.setText("Outros");
-        jMenuCadastro.add(jMenuItem13);
+        jMenuOutros.add(jMenuCteCadastro);
 
-        jMenuItem14.setText("Relatórios");
-        jMenuCadastro.add(jMenuItem14);
+        jMenuCteMDFe.setText("Ct-e/MDF-e");
+
+        jMenuItemMeiosDeTransportes.setText("Meios de transporte");
+        jMenuCteMDFe.add(jMenuItemMeiosDeTransportes);
+
+        jMenuOutros.add(jMenuCteMDFe);
+
+        jMenuEmpresasEFiliais.setText("Empresas e filliais");
+
+        jMenuItemEmpresas.setText("Empresas");
+        jMenuItemEmpresas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemEmpresasActionPerformed(evt);
+            }
+        });
+        jMenuEmpresasEFiliais.add(jMenuItemEmpresas);
+
+        jMenuOutros.add(jMenuEmpresasEFiliais);
+
+        jMenuEndereços.setText("Endereços");
+
+        jMenuItemCEPsNovos.setText("CEPs novos");
+        jMenuItemCEPsNovos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCEPsNovosActionPerformed(evt);
+            }
+        });
+        jMenuEndereços.add(jMenuItemCEPsNovos);
+
+        jMenuItemCidades.setText("Cidades");
+        jMenuEndereços.add(jMenuItemCidades);
+
+        jMenuItemEstados.setText("Estados");
+        jMenuEndereços.add(jMenuItemEstados);
+
+        jMenuItemPaíses.setText("Países");
+        jMenuEndereços.add(jMenuItemPaíses);
+
+        jMenuItemRegiões.setText("Regiões");
+        jMenuEndereços.add(jMenuItemRegiões);
+
+        jMenuOutros.add(jMenuEndereços);
+
+        jMenuEntidades.setText("Entidades");
+
+        jMenuItemConfiguraçãoCartãoFidelidade.setText("Configuração cartão fidelidade");
+        jMenuEntidades.add(jMenuItemConfiguraçãoCartãoFidelidade);
+
+        jMenuItemTiposDeHistóricoDeContato.setText("Tipos de histórico de contato");
+        jMenuEntidades.add(jMenuItemTiposDeHistóricoDeContato);
+
+        jMenuOutros.add(jMenuEntidades);
+
+        jMenuEstoque.setText("Estoque");
+
+        jMenuItemFamíliasDeProdutos.setText("Famílias de produtos");
+        jMenuEstoque.add(jMenuItemFamíliasDeProdutos);
+
+        jMenuItemFichaTécnicaDeDesagregação.setText("Ficha técnica de desagregação");
+        jMenuItemFichaTécnicaDeDesagregação.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemFichaTécnicaDeDesagregaçãoActionPerformed(evt);
+            }
+        });
+        jMenuEstoque.add(jMenuItemFichaTécnicaDeDesagregação);
+
+        jMenuItemGruposDeProduto.setText("Grupos de produto");
+        jMenuItemGruposDeProduto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemGruposDeProdutoActionPerformed(evt);
+            }
+        });
+        jMenuEstoque.add(jMenuItemGruposDeProduto);
+
+        jMenuItemImagens.setText("Imagens");
+        jMenuEstoque.add(jMenuItemImagens);
+
+        jMenuItemModelosDeGradeDeProduto.setText("Modelos de grade de produto");
+        jMenuEstoque.add(jMenuItemModelosDeGradeDeProduto);
+
+        jMenuItemMotivosDeAjusteDeEstoque.setText("Motivos de ajuste de estoque");
+        jMenuEstoque.add(jMenuItemMotivosDeAjusteDeEstoque);
+
+        jMenuItemUnidadesDeMedida.setText("Unidades de medida");
+        jMenuItemUnidadesDeMedida.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemUnidadesDeMedidaActionPerformed(evt);
+            }
+        });
+        jMenuEstoque.add(jMenuItemUnidadesDeMedida);
+
+        jMenuOutros.add(jMenuEstoque);
+
+        jMenuExpedição.setText("Expedição");
+
+        jMenuItemHistóricoDeEntrega.setText("Histórico de entrega");
+        jMenuItemHistóricoDeEntrega.setToolTipText("");
+        jMenuExpedição.add(jMenuItemHistóricoDeEntrega);
+
+        jMenuItemRotas.setText("Rotas");
+        jMenuExpedição.add(jMenuItemRotas);
+
+        jMenuOutros.add(jMenuExpedição);
+
+        jMenuFerramentas.setText("Ferramentas");
+
+        jMenuItemEDI.setText("EDI");
+        jMenuFerramentas.add(jMenuItemEDI);
+
+        jMenuItemTextosGenéricos.setText("Textos genéricos");
+        jMenuFerramentas.add(jMenuItemTextosGenéricos);
+
+        jMenuOutros.add(jMenuFerramentas);
+
+        jMenuFinanceiroCad.setText("Financeiro");
+
+        jMenuItemAdministradorasDeCartão.setText("Administradoras de cartão");
+        jMenuFinanceiroCad.add(jMenuItemAdministradorasDeCartão);
+
+        jMenuItemBancos.setText("Bancos");
+        jMenuFinanceiroCad.add(jMenuItemBancos);
+
+        jMenuItemBandeirasDeCartão.setText("Bandeiras de cartão");
+        jMenuItemBandeirasDeCartão.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemBandeirasDeCartãoActionPerformed(evt);
+            }
+        });
+        jMenuFinanceiroCad.add(jMenuItemBandeirasDeCartão);
+
+        jMenuItemCentrosDeCustos.setText("Centros de custo");
+        jMenuFinanceiroCad.add(jMenuItemCentrosDeCustos);
+
+        jMenuItemConfiguraçõesCentrosDeCusto.setText("Configurações centros de custo");
+        jMenuFinanceiroCad.add(jMenuItemConfiguraçõesCentrosDeCusto);
+
+        jMenuItemContasCorrentes.setText("Contas correntes");
+        jMenuFinanceiroCad.add(jMenuItemContasCorrentes);
+
+        jMenuItemCotaçãoDeMoedas.setText("Cotação de moedas");
+        jMenuFinanceiroCad.add(jMenuItemCotaçãoDeMoedas);
+
+        jMenuItemCódigosReduzidosCentrosDeCusto.setText("Códigos reduzidos centros de custo");
+        jMenuFinanceiroCad.add(jMenuItemCódigosReduzidosCentrosDeCusto);
+
+        jMenuItemExceçõesDoProcessamentoDoRetorno.setText("Exceções do processamento do retorno");
+        jMenuFinanceiroCad.add(jMenuItemExceçõesDoProcessamentoDoRetorno);
+
+        jMenuItemFeriados.setText("Feriados");
+        jMenuFinanceiroCad.add(jMenuItemFeriados);
+
+        jMenuItemMotivosDeBaixaDoFinanceiro.setText("Motivos de baixa do financeiro");
+        jMenuFinanceiroCad.add(jMenuItemMotivosDeBaixaDoFinanceiro);
+
+        jMenuItemPlanoDeContasGerencial.setText("Plano de contas gerencial");
+        jMenuFinanceiroCad.add(jMenuItemPlanoDeContasGerencial);
+
+        jMenuItemTiposDeCobrança.setText("Tipos de cobrança");
+        jMenuFinanceiroCad.add(jMenuItemTiposDeCobrança);
+
+        jMenuItemTiposDeComissão.setText("Tipos de comissão");
+        jMenuFinanceiroCad.add(jMenuItemTiposDeComissão);
+
+        jMenuItemTiposDeDocumentosFinanceiro.setText("Tipos de documentoS financeiro");
+        jMenuFinanceiroCad.add(jMenuItemTiposDeDocumentosFinanceiro);
+
+        jMenuOutros.add(jMenuFinanceiroCad);
+
+        jMenuGNREOnline.setText("GNRE On-line");
+
+        jMenuItemParâmentrosGNREOnline.setText("Parâmentros GNRE On-line");
+        jMenuGNREOnline.add(jMenuItemParâmentrosGNREOnline);
+
+        jMenuOutros.add(jMenuGNREOnline);
+
+        jMenuMDFe.setText("MDF-e");
+
+        jMenuItemParâmetrosMDFe.setText("Parâmetros");
+        jMenuMDFe.add(jMenuItemParâmetrosMDFe);
+
+        jMenuItemSériesMDFe.setText("Séries");
+        jMenuItemSériesMDFe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemSériesMDFeActionPerformed(evt);
+            }
+        });
+        jMenuMDFe.add(jMenuItemSériesMDFe);
+
+        jMenuOutros.add(jMenuMDFe);
+
+        jMenuModelosDeImpressão.setText("Modelos de impressão");
+
+        jMenuItemConfiguraçãoDeImpressoraNãoFiscal.setText("Configuração de impressora não fiscal");
+        jMenuModelosDeImpressão.add(jMenuItemConfiguraçãoDeImpressoraNãoFiscal);
+
+        jMenuItemModeloDeLaudoTécnico.setText("Modelo de laudo técnico");
+        jMenuModelosDeImpressão.add(jMenuItemModeloDeLaudoTécnico);
+
+        jMenuItemModeloDeReciboDeEntregaDeEquipamento.setText("Modelo de recibo de entrega de equipamento");
+        jMenuModelosDeImpressão.add(jMenuItemModeloDeReciboDeEntregaDeEquipamento);
+
+        jMenuItemModelosDeDAVOS.setText("Modelos de DAV-OS");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeDAVOS);
+
+        jMenuItemModelosDeCasoDoCRM.setText("Modelos de caso do CRM");
+        jMenuItemModelosDeCasoDoCRM.setToolTipText("");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeCasoDoCRM);
+
+        jMenuItemModelosDeDevolução.setText("Modelos de devolução");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeDevolução);
+
+        jMenuItemModelosDeDuplicata.setText("Modelos de duplicata");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeDuplicata);
+
+        jMenuItemModelosDeEtiquetaDeCódigoDeBarras.setText("Modelos de etiqueta de código de barras");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeEtiquetaDeCódigoDeBarras);
+
+        jMenuItemModelosDeEtiquetaDeCódigoDeBarrasScript.setText("Modelos de etiqueta de código de barras - Script");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeEtiquetaDeCódigoDeBarrasScript);
+
+        jMenuItemModelosDeEtiquetaDeMalaDireita.setText("Modelos de etiqueta de mala direita");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeEtiquetaDeMalaDireita);
+
+        jMenuItemModelosDeEtiquetaDeVolumesDeNotaFiscal.setText("Modelos de etiqueta de volume de nota fiscal");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeEtiquetaDeVolumesDeNotaFiscal);
+
+        jMenuItemModelosDeNotaFiscal.setText("Modelos de nota fiscal");
+        jMenuItemModelosDeNotaFiscal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemModelosDeNotaFiscalActionPerformed(evt);
+            }
+        });
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeNotaFiscal);
+
+        jMenuItemModelosDeOrdemDeServiço.setText("Modelos de ordem de serviço");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeOrdemDeServiço);
+
+        jMenuItemModelosDeOrçamento.setText("Modelos de orçamento");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeOrçamento);
+
+        jMenuItemModelosDeOrçamentoDeFaturamento.setText("Modelos de orçamento de faturamento");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeOrçamentoDeFaturamento);
+
+        jMenuItemModelosDePedidoDeCompra.setText("Modelos de pedido de compra");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDePedidoDeCompra);
+
+        jMenuItemModelosDePedidoDeFaturamento.setText("Modelos de pedido de faturamento");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDePedidoDeFaturamento);
+
+        jMenuItemModelosDePedidoDeVenda.setText("Modelos de pedido de venda");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDePedidoDeVenda);
+
+        jMenuItemModelosDeReciboDePagamento.setText("Modelos de recibo de pagamento");
+        jMenuModelosDeImpressão.add(jMenuItemModelosDeReciboDePagamento);
+
+        jMenuOutros.add(jMenuModelosDeImpressão);
+
+        jMenuNFCeSAT.setText("NFC-e/SAT");
+
+        jMenuItemConsultaCFe.setText("Consulta CF-e");
+        jMenuNFCeSAT.add(jMenuItemConsultaCFe);
+
+        jMenuItemConsultaNFCe.setText("Consulta NFC-e");
+        jMenuNFCeSAT.add(jMenuItemConsultaNFCe);
+
+        jMenuItemParâmetrosNFCeSAT.setText("Parâmetros NFC-e/SAT");
+        jMenuNFCeSAT.add(jMenuItemParâmetrosNFCeSAT);
+
+        jMenuOutros.add(jMenuNFCeSAT);
+
+        jMenuNotasFiscaisCadastro.setText("Notas Fiscais");
+
+        jMenuItemAlíquotasPorEstado.setText("Alíquotas por estado");
+        jMenuNotasFiscaisCadastro.add(jMenuItemAlíquotasPorEstado);
+
+        jMenuItemCEST.setText("CEST");
+        jMenuNotasFiscaisCadastro.add(jMenuItemCEST);
+
+        jMenuItemEnquadramentosDeIPI.setText("Enquadramentos de IPI");
+        jMenuNotasFiscaisCadastro.add(jMenuItemEnquadramentosDeIPI);
+
+        jMenuItemIbpt.setText("Ibpt");
+        jMenuNotasFiscaisCadastro.add(jMenuItemIbpt);
+
+        jMenuItemNaturezasDeOperaçãoETributaçõesEspeciais.setText("Naturezas de operação e tributações especiais");
+        jMenuNotasFiscaisCadastro.add(jMenuItemNaturezasDeOperaçãoETributaçõesEspeciais);
+
+        jMenuItemNaturezasDeOperaçãoETributaçõesEspeciaisPorEstado.setText("Naturezas de operações e tributações especiais por Estado");
+        jMenuItemNaturezasDeOperaçãoETributaçõesEspeciaisPorEstado.setToolTipText("");
+        jMenuNotasFiscaisCadastro.add(jMenuItemNaturezasDeOperaçãoETributaçõesEspeciaisPorEstado);
+
+        jMenuItemNcms.setText("Ncms");
+        jMenuNotasFiscaisCadastro.add(jMenuItemNcms);
+
+        jMenuItemOperaçõesFiscais.setText("Operações fiscais");
+        jMenuNotasFiscaisCadastro.add(jMenuItemOperaçõesFiscais);
+
+        jMenuItemParâmetrosDaNFe.setText("Parâmetros da NF-e");
+        jMenuNotasFiscaisCadastro.add(jMenuItemParâmetrosDaNFe);
+
+        jMenuItemParâmetrosDaNFSe.setText("Parâmetros da NFS-e");
+        jMenuNotasFiscaisCadastro.add(jMenuItemParâmetrosDaNFSe);
+
+        jMenuItemTabelasDeMVA.setText("Tabelas de MVA");
+        jMenuNotasFiscaisCadastro.add(jMenuItemTabelasDeMVA);
+
+        jMenuItemTabelasDeConversãoDeCSTCSOSN.setText("Tabelas de conversão de CST/CSOSN");
+        jMenuNotasFiscaisCadastro.add(jMenuItemTabelasDeConversãoDeCSTCSOSN);
+
+        jMenuItemZonaFrancaALC.setText("Zona Franca/ALC");
+        jMenuNotasFiscaisCadastro.add(jMenuItemZonaFrancaALC);
+
+        jMenuOutros.add(jMenuNotasFiscaisCadastro);
+
+        jMenuOrdemDeServiçoCadastro.setText("Ordem de serviço");
+
+        jMenuItemConfiguraçãoDaOrdemDeServiço.setText("Configuração da ordem de serviço");
+        jMenuOrdemDeServiçoCadastro.add(jMenuItemConfiguraçãoDaOrdemDeServiço);
+
+        jMenuItemObjetos.setText("Objetos");
+        jMenuOrdemDeServiçoCadastro.add(jMenuItemObjetos);
+
+        jMenuItemPrioridades.setText("Prioridades");
+        jMenuOrdemDeServiçoCadastro.add(jMenuItemPrioridades);
+
+        jMenuItemTiposDeEvento.setText("Tipos de evento");
+        jMenuOrdemDeServiçoCadastro.add(jMenuItemTiposDeEvento);
+
+        jMenuItemTiposDeProblema.setText("Tipos de problema");
+        jMenuOrdemDeServiçoCadastro.add(jMenuItemTiposDeProblema);
+
+        jMenuItemÁreas.setText("Áreas");
+        jMenuOrdemDeServiçoCadastro.add(jMenuItemÁreas);
+
+        jMenuOutros.add(jMenuOrdemDeServiçoCadastro);
+
+        jMenuPDV.setText("PDV");
+
+        jMenuItemAlterarSequenciaNumeraçãoDeDocumentos.setText("Alterar sequencia numeração de documentos");
+        jMenuPDV.add(jMenuItemAlterarSequenciaNumeraçãoDeDocumentos);
+
+        jMenuItemCancelamentoDeOperação.setText("Cancelamento de operação");
+        jMenuItemCancelamentoDeOperação.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCancelamentoDeOperaçãoActionPerformed(evt);
+            }
+        });
+        jMenuPDV.add(jMenuItemCancelamentoDeOperação);
+
+        jMenuItemConsultaOperações.setText("Consulta operações");
+        jMenuItemConsultaOperações.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemConsultaOperaçõesActionPerformed(evt);
+            }
+        });
+        jMenuPDV.add(jMenuItemConsultaOperações);
+
+        jMenuItemExtratoDoCartãoFidelidade.setText("Extrato do cartão fidelidade");
+        jMenuPDV.add(jMenuItemExtratoDoCartãoFidelidade);
+
+        jMenuItemImagensPromocionais.setText("Imagens promocionais");
+        jMenuPDV.add(jMenuItemImagensPromocionais);
+
+        jMenuItemMeiosDePagamento.setText("Meios de pagamento");
+        jMenuPDV.add(jMenuItemMeiosDePagamento);
+
+        jMenuItemMotivosDeSangriaSuprimento.setText("Motivos de Sangria/Suprimento");
+        jMenuPDV.add(jMenuItemMotivosDeSangriaSuprimento);
+
+        jMenuItemOperaçõesComPendênciaDeProcessamento.setText("Operações com pendência de processamento");
+        jMenuPDV.add(jMenuItemOperaçõesComPendênciaDeProcessamento);
+
+        jMenuItemReduçãoZ.setText("Redução Z");
+        jMenuPDV.add(jMenuItemReduçãoZ);
+
+        jMenuImportaçãoDoAtocotepe1704.setText("Importação do ato cotepe 17/04");
+
+        jMenuItemAnálise.setText("Análise");
+        jMenuImportaçãoDoAtocotepe1704.add(jMenuItemAnálise);
+
+        jMenuItemOperações.setText("Operações");
+        jMenuImportaçãoDoAtocotepe1704.add(jMenuItemOperações);
+
+        jMenuItemReduçõesZ.setText("Reduções Z");
+        jMenuImportaçãoDoAtocotepe1704.add(jMenuItemReduçõesZ);
+
+        jMenuPDV.add(jMenuImportaçãoDoAtocotepe1704);
+
+        jMenu3MovimentoECF.setText("Movimento ECF");
+
+        jMenuItemRequisitos0112.setText("Requisitos 01.12");
+        jMenu3MovimentoECF.add(jMenuItemRequisitos0112);
+
+        jMenuPDV.add(jMenu3MovimentoECF);
+
+        jMenuOutros.add(jMenuPDV);
+
+        jMenuSPED.setText("SPED");
+
+        jMenuItemAjusteApuraçãoIcms.setText("Ajuste Apuração Icms");
+        jMenuSPED.add(jMenuItemAjusteApuraçãoIcms);
+
+        jMenuItemAjusteDocumentoFiscal.setText("Ajuste Documento Fiscal");
+        jMenuSPED.add(jMenuItemAjusteDocumentoFiscal);
+
+        jMenuItemAjusteApuraçãoImpostos.setText("Ajuste apuração impostos");
+        jMenuSPED.add(jMenuItemAjusteApuraçãoImpostos);
+
+        jMenuItemApuraçãoImpostosSPED.setText("Apuração Impostos - SPED");
+        jMenuSPED.add(jMenuItemApuraçãoImpostosSPED);
+
+        jMenuItemCréditosDeEstímulo.setText("Créditos de Estímulo");
+        jMenuSPED.add(jMenuItemCréditosDeEstímulo);
+
+        jMenuItemCódigosDeReceitaDoICMS.setText("Códigos de receita do ICMS");
+        jMenuSPED.add(jMenuItemCódigosDeReceitaDoICMS);
+
+        JMenuItemFundoDeCombateAPobreza.setText("Fundo de Combate a Pobreza");
+        jMenuSPED.add(JMenuItemFundoDeCombateAPobreza);
+
+        jMenuItemInventários.setText("Inventários");
+        jMenuSPED.add(jMenuItemInventários);
+
+        jMenuItemObrigaçõesDoICMSRecolhidoRecolherDIFALEC8715.setText("Obrigações do ICMS recolhido/recolher - DIFAL EC 87/15");
+        jMenuSPED.add(jMenuItemObrigaçõesDoICMSRecolhidoRecolherDIFALEC8715);
+
+        jMenuItemObservaçõesLançamentoFiscal.setText("Observações lançamento fiscal");
+        jMenuSPED.add(jMenuItemObservaçõesLançamentoFiscal);
+
+        jMenuItemOutrosLançamentosPorFilial.setText("Outros lançamentos por filial");
+        jMenuSPED.add(jMenuItemOutrosLançamentosPorFilial);
+
+        jMenuItemParâmetrosDoSPEDFiscal.setText("Parâmetros do SPED fiscal");
+        jMenuSPED.add(jMenuItemParâmetrosDoSPEDFiscal);
+
+        jMenuItemSubApuraçãoDoICMS.setText("Sub-Apuração do ICMS");
+        jMenuSPED.add(jMenuItemSubApuraçãoDoICMS);
+
+        jMenuOutros.add(jMenuSPED);
+
+        jMenuTabelaDePreços.setText("Tabela de preços");
+
+        jMenuItemConfiguraçõesDoPainelDePreços.setText("Configurações do painel de preços");
+        jMenuTabelaDePreços.add(jMenuItemConfiguraçõesDoPainelDePreços);
+
+        jMenuItemTabelasDePreços.setText("Tabelas de preços");
+        jMenuTabelaDePreços.add(jMenuItemTabelasDePreços);
+
+        jMenuOutros.add(jMenuTabelaDePreços);
+
+        jMenuUnichef.setText("Unichef");
+
+        jMenuItemCaptação.setText("Captação");
+        jMenuUnichef.add(jMenuItemCaptação);
+
+        jMenuItemCombosUnichef.setText("Combos Unichef");
+        jMenuUnichef.add(jMenuItemCombosUnichef);
+
+        jMenuItemGruposDeProdutosUnichef.setText("Grupos de produtos Unichef");
+        jMenuUnichef.add(jMenuItemGruposDeProdutosUnichef);
+
+        jMenuItemLançamentoAutomático.setText("Lançamento automático");
+        jMenuUnichef.add(jMenuItemLançamentoAutomático);
+
+        jMenuItemReajusteDePreçosUnichef.setText("Reajuste de preços Unichef");
+        jMenuUnichef.add(jMenuItemReajusteDePreçosUnichef);
+
+        jMenuItemTaxaDeEntrega.setText("Taxa de entrega");
+        jMenuUnichef.add(jMenuItemTaxaDeEntrega);
+
+        jMenuImpressão.setText("Impressão");
+
+        jMenuItemGrupoDeImpressoras.setText("Grupos de impressoras");
+        jMenuImpressão.add(jMenuItemGrupoDeImpressoras);
+
+        jMenuItemPontosDeImpressão.setText("Pontos de impressão");
+        jMenuImpressão.add(jMenuItemPontosDeImpressão);
+
+        jMenuItemTiposDeImpressão.setText("Tipos de impressão");
+        jMenuItemTiposDeImpressão.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemTiposDeImpressãoActionPerformed(evt);
+            }
+        });
+        jMenuImpressão.add(jMenuItemTiposDeImpressão);
+
+        jMenuUnichef.add(jMenuImpressão);
+
+        jMenuRelatóriosUnichef.setText("Relatórios");
+
+        jMenuItemRelatórioDeCombos.setText("Relatório de combos");
+        jMenuRelatóriosUnichef.add(jMenuItemRelatórioDeCombos);
+
+        jMenuItemRelatórioDeEntregas.setText("Relatório de entregas");
+        jMenuRelatóriosUnichef.add(jMenuItemRelatórioDeEntregas);
+
+        jMenuUnichef.add(jMenuRelatóriosUnichef);
+
+        jMenuOutros.add(jMenuUnichef);
+
+        jMenuUsuários.setText("Usuários");
+
+        jMenuItemPerfisDeUsuário.setText("Perfis de usuário");
+        jMenuUsuários.add(jMenuItemPerfisDeUsuário);
+
+        jMenuItemUsuários.setText("Usuários");
+        jMenuUsuários.add(jMenuItemUsuários);
+
+        jMenuOutros.add(jMenuUsuários);
+
+        jMenuVendasCadastro.setText("Vendas");
+
+        jMenuItemCondiçõesDePagamento.setText("Condições de pagamento");
+        jMenuVendasCadastro.add(jMenuItemCondiçõesDePagamento);
+
+        jMenuItemMotivosDeDesconto.setText("Motivos de desconto");
+        jMenuVendasCadastro.add(jMenuItemMotivosDeDesconto);
+
+        jMenuItemPromoções.setText("Promoções");
+        jMenuVendasCadastro.add(jMenuItemPromoções);
+
+        jMenuItemTiposDeContato.setText("Tipos de contrato");
+        jMenuVendasCadastro.add(jMenuItemTiposDeContato);
+
+        jMenuItemTiposDePedido.setText("Tipos de pedido");
+        jMenuVendasCadastro.add(jMenuItemTiposDePedido);
+
+        jMenuOutros.add(jMenuVendasCadastro);
+
+        jMenuCadastro.add(jMenuOutros);
+
+        jMenuRelatórios.setText("Relatórios");
+
+        jMenuItemAniversariantes.setText("Aniversariantes");
+        jMenuRelatórios.add(jMenuItemAniversariantes);
+
+        jMenuItemExtratoDoCartãoFidelidadeRelatórios.setText("Extrato do cartão fidelidade");
+        jMenuRelatórios.add(jMenuItemExtratoDoCartãoFidelidadeRelatórios);
+
+        jMenuItemMalaDireita.setText("Mala direita");
+        jMenuRelatórios.add(jMenuItemMalaDireita);
+
+        jMenuItemPautaDePreços.setText("Pauta de preços");
+        jMenuRelatórios.add(jMenuItemPautaDePreços);
+
+        jMenuItemResgateCartãoFidelidade.setText("Resgate cartão fidelidade");
+        jMenuRelatórios.add(jMenuItemResgateCartãoFidelidade);
+
+        jMenuCadastro.add(jMenuRelatórios);
         jMenuCadastro.add(jSeparator1);
 
-        jMenuItemSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItemSair.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F14, java.awt.event.InputEvent.ALT_MASK));
         jMenuItemSair.setText("Sair");
-        jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItemSairActionPerformed(evt);
-            }
-        });
         jMenuCadastro.add(jMenuItemSair);
 
         jMenuBar1.add(jMenuCadastro);
 
         jMenuCompras.setText("Compras");
+
+        jMenuItemCotaçõesDeCompra.setText("Cotações de compra");
+        jMenuCompras.add(jMenuItemCotaçõesDeCompra);
+
+        jMenuItemPedidosDeCompra.setText("Pedidos de compra");
+        jMenuCompras.add(jMenuItemPedidosDeCompra);
+
+        jMenuItemRequisiçõesDeCompra.setText("Requisições de compra");
+        jMenuItemRequisiçõesDeCompra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemRequisiçõesDeCompraActionPerformed(evt);
+            }
+        });
+        jMenuCompras.add(jMenuItemRequisiçõesDeCompra);
+        jMenuCompras.add(jSeparator2);
+
+        jMenuItemCotaçõesDeCompra1.setText("Cotações de Compra");
+        jMenuCompras.add(jMenuItemCotaçõesDeCompra1);
+
         jMenuBar1.add(jMenuCompras);
 
-        jMenu3.setText("Produção");
-        jMenuBar1.add(jMenu3);
+        jMenuProdução.setText("Produção");
 
-        jMenu2.setText("Vendas");
-        jMenuBar1.add(jMenu2);
+        jMenuItemFichasTécnicas.setText("Fichas técnicas");
+        jMenuProdução.add(jMenuItemFichasTécnicas);
 
-        jMenu5.setText("Ordem de Serviço");
-        jMenuBar1.add(jMenu5);
+        jMenuItemRegistroDeProdução.setText("Registro de produção");
+        jMenuProdução.add(jMenuItemRegistroDeProdução);
+        jMenuProdução.add(jSeparator3);
 
-        jMenu6.setText("Notas Fiscais");
-        jMenuBar1.add(jMenu6);
+        jMenuItemListagemDeFichasTécnicas.setText("Listagem de fichas técnicas");
+        jMenuProdução.add(jMenuItemListagemDeFichasTécnicas);
+
+        jMenuItemListagemDeRegistrosDeProdução.setText("Listagem de registros de produção");
+        jMenuProdução.add(jMenuItemListagemDeRegistrosDeProdução);
+
+        jMenuItemListagemDeSeparaçãoDeInsumos.setText("Listagem de separação de insumos");
+        jMenuProdução.add(jMenuItemListagemDeSeparaçãoDeInsumos);
+
+        jMenuItemListagemPossívelDeProdução.setText("Listagem possível de produção");
+        jMenuProdução.add(jMenuItemListagemPossívelDeProdução);
+
+        jMenuBar1.add(jMenuProdução);
+
+        jMenuVendas.setText("Vendas");
+
+        jMenuItemConsignação.setText("Consignação");
+        jMenuVendas.add(jMenuItemConsignação);
+
+        jMenuItemContratos.setText("Contratos");
+        jMenuVendas.add(jMenuItemContratos);
+
+        jMenuItemDevoluções.setText("Devoluções");
+        jMenuItemDevoluções.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemDevoluçõesActionPerformed(evt);
+            }
+        });
+        jMenuVendas.add(jMenuItemDevoluções);
+
+        jMenuItemVendasNãoRealizadas.setText("Vendas não realizadas");
+        jMenuVendas.add(jMenuItemVendasNãoRealizadas);
+        jMenuVendas.add(jSeparator4);
+
+        jMenuItemDavOS.setText("Dav OS");
+        jMenuVendas.add(jMenuItemDavOS);
+
+        jMenuItemOrçamentos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemOrçamentos.setText("Orçamentos");
+        jMenuVendas.add(jMenuItemOrçamentos);
+
+        jMenuItemPedidosDeVenda.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
+        jMenuItemPedidosDeVenda.setText("Pedidos de Venda");
+        jMenuVendas.add(jMenuItemPedidosDeVenda);
+
+        jMenuItemPréVendas.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemPréVendas.setText("Pré-vendas");
+        jMenuVendas.add(jMenuItemPréVendas);
+        jMenuVendas.add(jSeparator5);
+
+        jMenuItemOrçamentosDeFaturamento.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
+        jMenuItemOrçamentosDeFaturamento.setText("Orçamentos de Faturamento");
+        jMenuVendas.add(jMenuItemOrçamentosDeFaturamento);
+
+        jMenuItemPedidosDeFaturamento.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.SHIFT_MASK));
+        jMenuItemPedidosDeFaturamento.setText("Pedidos de Faturamento");
+        jMenuVendas.add(jMenuItemPedidosDeFaturamento);
+        jMenuVendas.add(jSeparator6);
+
+        jMenuRelatórioDeVendas.setText("Relatório de vendas");
+
+        jMenuItemCarteiraDePedidos.setText("Carteira de pedidos");
+        jMenuRelatórioDeVendas.add(jMenuItemCarteiraDePedidos);
+
+        jMenuItemClientesSemVendas.setText("Clientes sem vendas");
+        jMenuRelatórioDeVendas.add(jMenuItemClientesSemVendas);
+
+        jMenuItemComissõesPorVendas.setText("Comissões por vendedor");
+        jMenuRelatórioDeVendas.add(jMenuItemComissõesPorVendas);
+
+        jMenuItemCurvaABCDeClientes.setText("Curva ABC de clientes");
+        jMenuRelatórioDeVendas.add(jMenuItemCurvaABCDeClientes);
+
+        jMenuItemCurvaABCDeProdutos.setText("Curva ABC de produtos");
+        jMenuRelatórioDeVendas.add(jMenuItemCurvaABCDeProdutos);
+
+        jMenuItemLiberaçãoPorSupervisor.setText("Liberação por supervisor");
+        jMenuRelatórioDeVendas.add(jMenuItemLiberaçãoPorSupervisor);
+
+        jMenuItemProdutosSemVenda.setText("Produtos sem venda");
+        jMenuRelatórioDeVendas.add(jMenuItemProdutosSemVenda);
+
+        jMenuItemRankingDeVendasELucratividade.setText("Ranking de vendas e lucratividade");
+        jMenuRelatórioDeVendas.add(jMenuItemRankingDeVendasELucratividade);
+
+        jMenuItemReajustesNosContratos.setText("Reajustes nos contratos");
+        jMenuRelatórioDeVendas.add(jMenuItemReajustesNosContratos);
+
+        jMenuItemTicketMédio.setText("Ticket médio");
+        jMenuRelatórioDeVendas.add(jMenuItemTicketMédio);
+        jMenuRelatórioDeVendas.add(jSeparator7);
+
+        jMenuItemVendasPDVCanceladas.setText("Vendas PDV canceladas");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPDVCanceladas);
+
+        jMenuItemVendasPDVPorHora.setText("Vendas PDV por hora");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPDVPorHora);
+
+        jMenuItemVendasPDVPorTributação.setText("Vendas PDV por tributação");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPDVPorTributação);
+
+        jMenuItemVendasPorPDV.setText("Vendas por PDV");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorPDV);
+        jMenuRelatórioDeVendas.add(jSeparator8);
+
+        jMenuItemVendasAbaixoDoPreçoMínimo.setText("Vendas abaixo do preço mínimo");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasAbaixoDoPreçoMínimo);
+
+        jMenuItemVendasDeKit.setText("Vendas de kit");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasDeKit);
+
+        jMenuItemVendasDeProdutoNoPeríodo.setText("Vendas de produto no período");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasDeProdutoNoPeríodo);
+
+        jMenuItemVendasDeProdutoPorGrade.setText("Vendas de produto por grade");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasDeProdutoPorGrade);
+
+        jMenuItemVendasDeServiçoNoPeríodo.setText("Vendas de serviço no período");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasDeServiçoNoPeríodo);
+
+        jMenuItemVendasPorAdministradorasDeCartão.setText("Vendas por administradoras de cartão");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorAdministradorasDeCartão);
+
+        jMenuItemVendasPorClienteEProduto.setText("Vendas por cliente e produto");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorClienteEProduto);
+
+        jMenuItemVendasPorClienteÀVistaAPrazo.setText("Vendas por cliente à vista a prazo");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorClienteÀVistaAPrazo);
+
+        jMenuItemVendasPorCondiçõesDePagamento.setText("Vendas por condições de pagamento");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorCondiçõesDePagamento);
+
+        jMenuItemVendasPorFilial.setText("Vendas por filial");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorFilial);
+
+        jMenuItemVendasPorLote.setText("Vendas por lote");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorLote);
+
+        jMenuItemVendaPorNotaFiscal.setText("Vendas por nota fiscal");
+        jMenuRelatórioDeVendas.add(jMenuItemVendaPorNotaFiscal);
+
+        jMenuItemVendasPorTurno.setText("Vendas por turno");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorTurno);
+
+        jMenuItemVendasPorVendedor.setText("Vendas por vendedor");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasPorVendedor);
+
+        jMenuItemVendasÀVistaEAPrazo.setText("Vendas à vista e a prazo");
+        jMenuRelatórioDeVendas.add(jMenuItemVendasÀVistaEAPrazo);
+
+        jMenuVendas.add(jMenuRelatórioDeVendas);
+
+        jMenuBar1.add(jMenuVendas);
+
+        jMenuOrdemDeServiço.setText("Ordem de Serviço");
+
+        jMenuItemOrdensDeServiço.setText("Ordens de serviço");
+        jMenuOrdemDeServiço.add(jMenuItemOrdensDeServiço);
+
+        jSeparator9.setToolTipText("");
+        jMenuOrdemDeServiço.add(jSeparator9);
+
+        jMenuItemListagemDeOrdensDeServiço.setText("Listagem de ordens de serviço");
+        jMenuOrdemDeServiço.add(jMenuItemListagemDeOrdensDeServiço);
+
+        jMenuItemListagemDeProdutosServiços.setText("Listagem de produtos/serviços");
+        jMenuOrdemDeServiço.add(jMenuItemListagemDeProdutosServiços);
+
+        jMenuItemListagemDeServiçosPorTécnico.setText("Listagem de serviços por técnico");
+        jMenuOrdemDeServiço.add(jMenuItemListagemDeServiçosPorTécnico);
+
+        jMenuBar1.add(jMenuOrdemDeServiço);
+
+        jMenuNotasFiscais.setText("Notas Fiscais");
+
+        jMenuItemAtendimentoDasRequisiçõesDeTransferência.setText("Atendimento das requisições de transferência");
+        jMenuNotasFiscais.add(jMenuItemAtendimentoDasRequisiçõesDeTransferência);
+
+        jMenuItemConhecimentosDeTransporte.setText("Conhecimentos de transporte");
+        jMenuNotasFiscais.add(jMenuItemConhecimentosDeTransporte);
+
+        jMenuItemCte.setText("Ct-e");
+        jMenuNotasFiscais.add(jMenuItemCte);
+
+        jMenuItemGNREOnline.setText("GNRE On-line");
+        jMenuItemGNREOnline.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemGNREOnlineActionPerformed(evt);
+            }
+        });
+        jMenuNotasFiscais.add(jMenuItemGNREOnline);
+
+        jMenuItemGerarPinDaNotaFiscal.setText("Gerar pin da nota fiscal");
+        jMenuNotasFiscais.add(jMenuItemGerarPinDaNotaFiscal);
+
+        jMenuItemMDFeSaída.setText("MDF-e - saída");
+        jMenuNotasFiscais.add(jMenuItemMDFeSaída);
+        jMenuNotasFiscais.add(jSeparator11);
+
+        jMenuItemNotaFiscalDeEntrada.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemNotaFiscalDeEntrada.setText("Nota fiscal de entrada");
+        jMenuNotasFiscais.add(jMenuItemNotaFiscalDeEntrada);
+
+        jMenuItemNotaFiscalDePedidosDeFaturamento.setText("Nota fiscal de pedidos de faturamento");
+        jMenuNotasFiscais.add(jMenuItemNotaFiscalDePedidosDeFaturamento);
+
+        jMenuItemNotaFiscalDePreparação.setText("Nota fiscal de preparação");
+        jMenuNotasFiscais.add(jMenuItemNotaFiscalDePreparação);
+
+        jMenuItemNotaFiscalDeSaída.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.ALT_MASK));
+        jMenuItemNotaFiscalDeSaída.setText("Nota fiscal de saída");
+        jMenuNotasFiscais.add(jMenuItemNotaFiscalDeSaída);
+
+        jMenuItemNotasFiscaisParaDesagregação.setText("Notas fiscais para desagregação");
+        jMenuNotasFiscais.add(jMenuItemNotasFiscaisParaDesagregação);
+
+        jMenuItemRequisiçõesDeTransferência.setText("Requisições de transferência");
+        jMenuNotasFiscais.add(jMenuItemRequisiçõesDeTransferência);
+        jMenuNotasFiscais.add(jSeparator10);
+
+        jMenuItemApuraçãoDeFundoDeCombateAPobreza.setText("Apuração de Fundo de Combate a Pobreza");
+        jMenuNotasFiscais.add(jMenuItemApuraçãoDeFundoDeCombateAPobreza);
+
+        jMenuItemApuraçãoDeJCMSPartilhaDIFALEC8715.setText("Apuração JCMS Partilha - DIFAL EC 87/15");
+        jMenuNotasFiscais.add(jMenuItemApuraçãoDeJCMSPartilhaDIFALEC8715);
+
+        jMenuItemApuraçãoDePISCOFINS.setText("Apuração de PIS/COFINS");
+        jMenuNotasFiscais.add(jMenuItemApuraçãoDePISCOFINS);
+
+        jMenuItemApuraçãoDeImpostos.setText("Apuração de impostos");
+        jMenuNotasFiscais.add(jMenuItemApuraçãoDeImpostos);
+
+        jMenuItemComplementosDeViagens.setText("Complementos de viagens");
+        jMenuNotasFiscais.add(jMenuItemComplementosDeViagens);
+
+        jMenuItemComprasPorProdutoFornecedor.setText("Compras por produto/fornecedor");
+        jMenuNotasFiscais.add(jMenuItemComprasPorProdutoFornecedor);
+
+        jMenuItemEspelhoDeNotaFiscal.setText("Espelho de nota fiscal");
+        jMenuNotasFiscais.add(jMenuItemEspelhoDeNotaFiscal);
+
+        jMenuItemNotasFiscaisNoPeríodo.setText("Notas fiscais no período");
+        jMenuItemNotasFiscaisNoPeríodo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemNotasFiscaisNoPeríodoActionPerformed(evt);
+            }
+        });
+        jMenuNotasFiscais.add(jMenuItemNotasFiscaisNoPeríodo);
+
+        jMenuBar1.add(jMenuNotasFiscais);
 
         jMenu7.setText("Contabilidade");
         jMenuBar1.add(jMenu7);
 
-        jMenu8.setText("CRM");
-        jMenuBar1.add(jMenu8);
+        jMenuCRM.setText("CRM");
+        jMenuBar1.add(jMenuCRM);
 
         jMenu9.setText("Estoque");
         jMenuBar1.add(jMenu9);
@@ -485,15 +1575,20 @@ public class JFramePrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jLayeredPane1)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(5, 5, 5)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 718, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -501,20 +1596,6 @@ public class JFramePrincipal extends javax.swing.JFrame {
 
     private void jButtonClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClientesActionPerformed
         // TODO add your handling code here:
-        /*Component componentes [] = jTabbedPane1.getComponents();
-        boolean achou = false;
-        for(int i=0; i< componentes.length; i++){
-            if(componentes[i].getClass().isInstance(JPanelClientes.class)){
-                achou = true;
-            }
-        }
-        */
-        //if(!achou)
-            //jInternalFrameClientes.add(jPanelClientes);
-            
-            jTabbedPane1.addTab("Clientes",jInternalFrameClientes);
-            jInternalFrameClientes.show();
-            //jInternalFrameClientes.setVisible(true);
     }//GEN-LAST:event_jButtonClientesActionPerformed
 
     private void jButtonBancosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBancosActionPerformed
@@ -539,14 +1620,14 @@ public class JFramePrincipal extends javax.swing.JFrame {
 
     private void jButtonFornecedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFornecedoresActionPerformed
         // TODO add your handling code here:
-            jTabbedPane1.addTab("Fornecedores",jInternalFrameFornecedores);
-            jInternalFrameFornecedores.show();
-            //jInternalFrameFornecedores.setVisible(true);
     }//GEN-LAST:event_jButtonFornecedoresActionPerformed
+
+    private void jButtonSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonSairActionPerformed
 
     private void jButtonNavegaçãoRápidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNavegaçãoRápidaActionPerformed
         // TODO add your handling code here:
-        
     }//GEN-LAST:event_jButtonNavegaçãoRápidaActionPerformed
 
     private void jButtonContasAReceberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonContasAReceberActionPerformed
@@ -581,78 +1662,89 @@ public class JFramePrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonPedidosDeFaturamentoActionPerformed
 
-    private void jMenuItemClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClientesActionPerformed
-        
+    private void jMenuItemRequisiçõesDeCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemRequisiçõesDeCompraActionPerformed
         // TODO add your handling code here:
-        //jTabbedPane1.add(jPanelClientes);
-            //jPanelClientes.add(jInternalFrameClientes);
-            //jTabbedPane1.addTab("Clientes",jPanelClientes);
-            
-            //jInternalFrameClientes.add(jPanelClientes);
-            //jInternalFrameClientes.show();
-            jTabbedPane1.addTab("Clientes",jInternalFrameClientes);
-            jInternalFrameClientes.show();
-            //jInternalFrameClientes.setVisible(true);
-    }//GEN-LAST:event_jMenuItemClientesActionPerformed
+    }//GEN-LAST:event_jMenuItemRequisiçõesDeCompraActionPerformed
 
-    private void jMenuItemFornecedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemFornecedoresActionPerformed
+    private void jMenuItemEmpresasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemEmpresasActionPerformed
         // TODO add your handling code here:
-        jTabbedPane1.addTab("Fornecedores", jInternalFrameFornecedores);
-        jInternalFrameFornecedores.show();
-        //jInternalFrameFornecedores.setVisible(true);
-    }//GEN-LAST:event_jMenuItemFornecedoresActionPerformed
+    }//GEN-LAST:event_jMenuItemEmpresasActionPerformed
 
-    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+    private void jMenuItemCEPsNovosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCEPsNovosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem11ActionPerformed
+    }//GEN-LAST:event_jMenuItemCEPsNovosActionPerformed
 
-    private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSairActionPerformed
+    private void jMenuItemFichaTécnicaDeDesagregaçãoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemFichaTécnicaDeDesagregaçãoActionPerformed
         // TODO add your handling code here:
-        //exit(0);
-        System.exit(0);
-    }//GEN-LAST:event_jMenuItemSairActionPerformed
+    }//GEN-LAST:event_jMenuItemFichaTécnicaDeDesagregaçãoActionPerformed
 
-    private void jTabbedPane1ComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jTabbedPane1ComponentHidden
+    private void jMenuItemGruposDeProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGruposDeProdutoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTabbedPane1ComponentHidden
+    }//GEN-LAST:event_jMenuItemGruposDeProdutoActionPerformed
+
+    private void jMenuItemUnidadesDeMedidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemUnidadesDeMedidaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemUnidadesDeMedidaActionPerformed
+
+    private void jMenuItemBandeirasDeCartãoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemBandeirasDeCartãoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemBandeirasDeCartãoActionPerformed
+
+    private void jMenuItemParâmetrosCteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemParâmetrosCteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemParâmetrosCteActionPerformed
+
+    private void jMenuItemSériesMDFeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSériesMDFeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemSériesMDFeActionPerformed
+
+    private void jMenuItemModelosDeNotaFiscalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemModelosDeNotaFiscalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemModelosDeNotaFiscalActionPerformed
+
+    private void jMenuItemCancelamentoDeOperaçãoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCancelamentoDeOperaçãoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemCancelamentoDeOperaçãoActionPerformed
+
+    private void jMenuItemConsultaOperaçõesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemConsultaOperaçõesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemConsultaOperaçõesActionPerformed
+
+    private void jMenuItemTiposDeImpressãoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemTiposDeImpressãoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemTiposDeImpressãoActionPerformed
+
+    private void jMenuItemDevoluçõesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemDevoluçõesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemDevoluçõesActionPerformed
+
+    private void jMenuItemGNREOnlineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemGNREOnlineActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemGNREOnlineActionPerformed
+
+    private void jMenuItemNotasFiscaisNoPeríodoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemNotasFiscaisNoPeríodoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemNotasFiscaisNoPeríodoActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFramePrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFramePrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFramePrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFramePrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
+     
+        JFramePrincipal jf= new JFramePrincipal();
+        jf.show();
+        jf.setVisible(true);
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+        /*java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new JFramePrincipal().setVisible(true);
             }
         });
-        
+        */
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem JMenuItemFundoDeCombateAPobreza;
     private javax.swing.JButton jButtonBancos;
     private javax.swing.JButton jButtonCaixa;
     private javax.swing.JButton jButtonClientes;
@@ -669,37 +1761,289 @@ public class JFramePrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPedidosDeVenda;
     private javax.swing.JButton jButtonPreVendas;
     private javax.swing.JButton jButtonProdutos;
+    private javax.swing.JButton jButtonSair;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu3MovimentoECF;
     private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu jMenuCRM;
     private javax.swing.JMenu jMenuCadastro;
     private javax.swing.JMenu jMenuCompras;
+    private javax.swing.JMenu jMenuCrm;
+    private javax.swing.JMenu jMenuCteCadastro;
+    private javax.swing.JMenu jMenuCteMDFe;
+    private javax.swing.JMenu jMenuEmpresasEFiliais;
+    private javax.swing.JMenu jMenuEndereços;
+    private javax.swing.JMenu jMenuEntidades;
+    private javax.swing.JMenu jMenuEstoque;
+    private javax.swing.JMenu jMenuExpedição;
+    private javax.swing.JMenu jMenuFerramentas;
     private javax.swing.JMenu jMenuFinanceiro;
-    private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem11;
-    private javax.swing.JMenuItem jMenuItem12;
-    private javax.swing.JMenuItem jMenuItem13;
-    private javax.swing.JMenuItem jMenuItem14;
-    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenu jMenuFinanceiroCad;
+    private javax.swing.JMenu jMenuGNREOnline;
+    private javax.swing.JMenu jMenuImportaçãoDoAtocotepe1704;
+    private javax.swing.JMenu jMenuImpressão;
+    private javax.swing.JMenuItem jMenuItemAdministradorasDeCartão;
+    private javax.swing.JMenuItem jMenuItemAjusteApuraçãoIcms;
+    private javax.swing.JMenuItem jMenuItemAjusteApuraçãoImpostos;
+    private javax.swing.JMenuItem jMenuItemAjusteDocumentoFiscal;
+    private javax.swing.JMenuItem jMenuItemAlterarSequenciaNumeraçãoDeDocumentos;
+    private javax.swing.JMenuItem jMenuItemAlíquotasPorEstado;
+    private javax.swing.JMenuItem jMenuItemAniversariantes;
+    private javax.swing.JMenuItem jMenuItemAnálise;
+    private javax.swing.JMenuItem jMenuItemApuraçãoDeFundoDeCombateAPobreza;
+    private javax.swing.JMenuItem jMenuItemApuraçãoDeImpostos;
+    private javax.swing.JMenuItem jMenuItemApuraçãoDeJCMSPartilhaDIFALEC8715;
+    private javax.swing.JMenuItem jMenuItemApuraçãoDePISCOFINS;
+    private javax.swing.JMenuItem jMenuItemApuraçãoImpostosSPED;
+    private javax.swing.JMenuItem jMenuItemAtendimentoDasRequisiçõesDeTransferência;
+    private javax.swing.JMenuItem jMenuItemBancos;
+    private javax.swing.JMenuItem jMenuItemBandeirasDeCartão;
+    private javax.swing.JMenuItem jMenuItemCEPsNovos;
+    private javax.swing.JMenuItem jMenuItemCEST;
+    private javax.swing.JMenuItem jMenuItemCancelamentoDeOperação;
+    private javax.swing.JMenuItem jMenuItemCaptação;
+    private javax.swing.JMenuItem jMenuItemCarteiraDePedidos;
+    private javax.swing.JMenuItem jMenuItemCategoria;
+    private javax.swing.JMenuItem jMenuItemCausaRaiz;
+    private javax.swing.JMenuItem jMenuItemCentrosDeCustos;
+    private javax.swing.JMenuItem jMenuItemCidades;
     private javax.swing.JMenuItem jMenuItemClientes;
+    private javax.swing.JMenuItem jMenuItemClientesSemVendas;
+    private javax.swing.JMenuItem jMenuItemCombosUnichef;
+    private javax.swing.JMenuItem jMenuItemComissõesPorVendas;
+    private javax.swing.JMenuItem jMenuItemComplementosDeViagens;
     private javax.swing.JMenuItem jMenuItemCompradores;
-    private javax.swing.JMenuItem jMenuItemEntregadores;
+    private javax.swing.JMenuItem jMenuItemComprasPorProdutoFornecedor;
+    private javax.swing.JMenuItem jMenuItemCondiçõesDePagamento;
+    private javax.swing.JMenuItem jMenuItemConfiguraçãoCartãoFidelidade;
+    private javax.swing.JMenuItem jMenuItemConfiguraçãoDaOrdemDeServiço;
+    private javax.swing.JMenuItem jMenuItemConfiguraçãoDeImpressoraNãoFiscal;
+    private javax.swing.JMenuItem jMenuItemConfiguraçõesCentrosDeCusto;
+    private javax.swing.JMenuItem jMenuItemConfiguraçõesDoPainelDePreços;
+    private javax.swing.JMenuItem jMenuItemConhecimentosDeTransporte;
+    private javax.swing.JMenuItem jMenuItemConsignação;
+    private javax.swing.JMenuItem jMenuItemConsultaCFe;
+    private javax.swing.JMenuItem jMenuItemConsultaNFCe;
+    private javax.swing.JMenuItem jMenuItemConsultaOperações;
+    private javax.swing.JMenuItem jMenuItemContasCorrentes;
+    private javax.swing.JMenuItem jMenuItemContratos;
+    private javax.swing.JMenuItem jMenuItemCotaçãoDeMoedas;
+    private javax.swing.JMenuItem jMenuItemCotaçõesDeCompra;
+    private javax.swing.JMenuItem jMenuItemCotaçõesDeCompra1;
+    private javax.swing.JMenuItem jMenuItemCréditosDeEstímulo;
+    private javax.swing.JMenuItem jMenuItemCte;
+    private javax.swing.JMenuItem jMenuItemCurvaABCDeClientes;
+    private javax.swing.JMenuItem jMenuItemCurvaABCDeProdutos;
+    private javax.swing.JMenuItem jMenuItemCódigosDeReceitaDoICMS;
+    private javax.swing.JMenuItem jMenuItemCódigosReduzidosCentrosDeCusto;
+    private javax.swing.JMenuItem jMenuItemDavOS;
+    private javax.swing.JMenuItem jMenuItemDevoluções;
+    private javax.swing.JMenuItem jMenuItemEDI;
+    private javax.swing.JMenuItem jMenuItemEmpresas;
+    private javax.swing.JMenuItem jMenuItemEnquadramentosDeIPI;
+    private javax.swing.JMenuItem jMenuItemEntregador;
+    private javax.swing.JMenuItem jMenuItemEspelhoDeNotaFiscal;
+    private javax.swing.JMenuItem jMenuItemEstados;
+    private javax.swing.JMenuItem jMenuItemExceçõesDoProcessamentoDoRetorno;
+    private javax.swing.JMenuItem jMenuItemExtratoDoCartãoFidelidade;
+    private javax.swing.JMenuItem jMenuItemExtratoDoCartãoFidelidadeRelatórios;
     private javax.swing.JMenuItem jMenuItemFabricantes;
+    private javax.swing.JMenuItem jMenuItemFamíliasDeProdutos;
+    private javax.swing.JMenuItem jMenuItemFeriados;
+    private javax.swing.JMenuItem jMenuItemFichaTécnicaDeDesagregação;
+    private javax.swing.JMenuItem jMenuItemFichasTécnicas;
     private javax.swing.JMenuItem jMenuItemFornecedores;
-    private javax.swing.JMenuItem jMenuItemGarcom;
+    private javax.swing.JMenuItem jMenuItemGNREOnline;
+    private javax.swing.JMenuItem jMenuItemGarçom;
+    private javax.swing.JMenuItem jMenuItemGerarPinDaNotaFiscal;
+    private javax.swing.JMenuItem jMenuItemGrupoDeImpressoras;
+    private javax.swing.JMenuItem jMenuItemGruposDeProduto;
+    private javax.swing.JMenuItem jMenuItemGruposDeProdutosUnichef;
+    private javax.swing.JMenuItem jMenuItemHistóricoDeEntrega;
+    private javax.swing.JMenuItem jMenuItemIbpt;
+    private javax.swing.JMenuItem jMenuItemImagens;
+    private javax.swing.JMenuItem jMenuItemImagensPromocionais;
+    private javax.swing.JMenuItem jMenuItemInventários;
+    private javax.swing.JMenuItem jMenuItemLançamentoAutomático;
+    private javax.swing.JMenuItem jMenuItemLiberaçãoPorSupervisor;
+    private javax.swing.JMenuItem jMenuItemListagemDeFichasTécnicas;
+    private javax.swing.JMenuItem jMenuItemListagemDeOrdensDeServiço;
+    private javax.swing.JMenuItem jMenuItemListagemDeProdutosServiços;
+    private javax.swing.JMenuItem jMenuItemListagemDeRegistrosDeProdução;
+    private javax.swing.JMenuItem jMenuItemListagemDeSeparaçãoDeInsumos;
+    private javax.swing.JMenuItem jMenuItemListagemDeServiçosPorTécnico;
+    private javax.swing.JMenuItem jMenuItemListagemPossívelDeProdução;
+    private javax.swing.JMenuItem jMenuItemMDFeSaída;
+    private javax.swing.JMenuItem jMenuItemMalaDireita;
+    private javax.swing.JMenuItem jMenuItemMeiosDePagamento;
+    private javax.swing.JMenuItem jMenuItemMeiosDeTransportes;
+    private javax.swing.JMenuItem jMenuItemModeloDeLaudoTécnico;
+    private javax.swing.JMenuItem jMenuItemModeloDeReciboDeEntregaDeEquipamento;
+    private javax.swing.JMenuItem jMenuItemModelosDeCasoDoCRM;
+    private javax.swing.JMenuItem jMenuItemModelosDeDAVOS;
+    private javax.swing.JMenuItem jMenuItemModelosDeDevolução;
+    private javax.swing.JMenuItem jMenuItemModelosDeDuplicata;
+    private javax.swing.JMenuItem jMenuItemModelosDeEtiquetaDeCódigoDeBarras;
+    private javax.swing.JMenuItem jMenuItemModelosDeEtiquetaDeCódigoDeBarrasScript;
+    private javax.swing.JMenuItem jMenuItemModelosDeEtiquetaDeMalaDireita;
+    private javax.swing.JMenuItem jMenuItemModelosDeEtiquetaDeVolumesDeNotaFiscal;
+    private javax.swing.JMenuItem jMenuItemModelosDeGradeDeProduto;
+    private javax.swing.JMenuItem jMenuItemModelosDeNotaFiscal;
+    private javax.swing.JMenuItem jMenuItemModelosDeOrdemDeServiço;
+    private javax.swing.JMenuItem jMenuItemModelosDeOrçamento;
+    private javax.swing.JMenuItem jMenuItemModelosDeOrçamentoDeFaturamento;
+    private javax.swing.JMenuItem jMenuItemModelosDePedidoDeCompra;
+    private javax.swing.JMenuItem jMenuItemModelosDePedidoDeFaturamento;
+    private javax.swing.JMenuItem jMenuItemModelosDePedidoDeVenda;
+    private javax.swing.JMenuItem jMenuItemModelosDeReciboDePagamento;
+    private javax.swing.JMenuItem jMenuItemMotivosDeAjusteDeEstoque;
+    private javax.swing.JMenuItem jMenuItemMotivosDeBaixaDoFinanceiro;
+    private javax.swing.JMenuItem jMenuItemMotivosDeDesconto;
+    private javax.swing.JMenuItem jMenuItemMotivosDeSangriaSuprimento;
     private javax.swing.JMenuItem jMenuItemMotoristas;
+    private javax.swing.JMenuItem jMenuItemNaturezasDeOperaçãoETributaçõesEspeciais;
+    private javax.swing.JMenuItem jMenuItemNaturezasDeOperaçãoETributaçõesEspeciaisPorEstado;
+    private javax.swing.JMenuItem jMenuItemNcms;
+    private javax.swing.JMenuItem jMenuItemNotaFiscalDeEntrada;
+    private javax.swing.JMenuItem jMenuItemNotaFiscalDePedidosDeFaturamento;
+    private javax.swing.JMenuItem jMenuItemNotaFiscalDePreparação;
+    private javax.swing.JMenuItem jMenuItemNotaFiscalDeSaída;
+    private javax.swing.JMenuItem jMenuItemNotasFiscaisNoPeríodo;
+    private javax.swing.JMenuItem jMenuItemNotasFiscaisParaDesagregação;
+    private javax.swing.JMenuItem jMenuItemObjetos;
+    private javax.swing.JMenuItem jMenuItemObrigaçõesDoICMSRecolhidoRecolherDIFALEC8715;
+    private javax.swing.JMenuItem jMenuItemObservaçõesLançamentoFiscal;
+    private javax.swing.JMenuItem jMenuItemOperações;
+    private javax.swing.JMenuItem jMenuItemOperaçõesComPendênciaDeProcessamento;
+    private javax.swing.JMenuItem jMenuItemOperaçõesFiscais;
+    private javax.swing.JMenuItem jMenuItemOrdensDeServiço;
+    private javax.swing.JMenuItem jMenuItemOrçamentos;
+    private javax.swing.JMenuItem jMenuItemOrçamentosDeFaturamento;
+    private javax.swing.JMenuItem jMenuItemOutrosLançamentosPorFilial;
+    private javax.swing.JMenuItem jMenuItemParâmentrosGNREOnline;
+    private javax.swing.JMenuItem jMenuItemParâmetrosCte;
+    private javax.swing.JMenuItem jMenuItemParâmetrosDaNFSe;
+    private javax.swing.JMenuItem jMenuItemParâmetrosDaNFe;
+    private javax.swing.JMenuItem jMenuItemParâmetrosDoSPEDFiscal;
+    private javax.swing.JMenuItem jMenuItemParâmetrosMDFe;
+    private javax.swing.JMenuItem jMenuItemParâmetrosNFCeSAT;
+    private javax.swing.JMenuItem jMenuItemPautaDePreços;
+    private javax.swing.JMenuItem jMenuItemPaíses;
+    private javax.swing.JMenuItem jMenuItemPedidosDeCompra;
+    private javax.swing.JMenuItem jMenuItemPedidosDeFaturamento;
+    private javax.swing.JMenuItem jMenuItemPedidosDeVenda;
+    private javax.swing.JMenuItem jMenuItemPerfisDeUsuário;
+    private javax.swing.JMenuItem jMenuItemPlanoDeContasGerencial;
+    private javax.swing.JMenuItem jMenuItemPontosDeImpressão;
     private javax.swing.JMenuItem jMenuItemPortadores;
+    private javax.swing.JMenuItem jMenuItemPrioridade;
+    private javax.swing.JMenuItem jMenuItemPrioridades;
+    private javax.swing.JMenuItem jMenuItemProdutos;
+    private javax.swing.JMenuItem jMenuItemProdutosSemVenda;
+    private javax.swing.JMenuItem jMenuItemPromoções;
+    private javax.swing.JMenuItem jMenuItemPréVendas;
+    private javax.swing.JMenuItem jMenuItemRankingDeVendasELucratividade;
+    private javax.swing.JMenuItem jMenuItemReajusteDePreçosUnichef;
+    private javax.swing.JMenuItem jMenuItemReajustesNosContratos;
+    private javax.swing.JMenuItem jMenuItemReduçãoZ;
+    private javax.swing.JMenuItem jMenuItemReduçõesZ;
+    private javax.swing.JMenuItem jMenuItemRegistroDeProdução;
+    private javax.swing.JMenuItem jMenuItemRegiões;
+    private javax.swing.JMenuItem jMenuItemRelatórioDeCombos;
+    private javax.swing.JMenuItem jMenuItemRelatórioDeEntregas;
+    private javax.swing.JMenuItem jMenuItemRequisitos0112;
+    private javax.swing.JMenuItem jMenuItemRequisiçõesDeCompra;
+    private javax.swing.JMenuItem jMenuItemRequisiçõesDeTransferência;
+    private javax.swing.JMenuItem jMenuItemResgateCartãoFidelidade;
+    private javax.swing.JMenuItem jMenuItemRotas;
     private javax.swing.JMenuItem jMenuItemSair;
+    private javax.swing.JMenuItem jMenuItemServiços;
+    private javax.swing.JMenuItem jMenuItemSetor;
+    private javax.swing.JMenuItem jMenuItemSeveridade;
+    private javax.swing.JMenuItem jMenuItemSubApuraçãoDoICMS;
+    private javax.swing.JMenuItem jMenuItemSériesCte;
+    private javax.swing.JMenuItem jMenuItemSériesMDFe;
+    private javax.swing.JMenuItem jMenuItemTabelasDeConversãoDeCSTCSOSN;
+    private javax.swing.JMenuItem jMenuItemTabelasDeMVA;
+    private javax.swing.JMenuItem jMenuItemTabelasDePreços;
+    private javax.swing.JMenuItem jMenuItemTaxaDeEntrega;
+    private javax.swing.JMenuItem jMenuItemTextosGenéricos;
+    private javax.swing.JMenuItem jMenuItemTicketMédio;
+    private javax.swing.JMenuItem jMenuItemTipoDeContato;
+    private javax.swing.JMenuItem jMenuItemTipoOcorrência;
+    private javax.swing.JMenuItem jMenuItemTipoRegistro;
+    private javax.swing.JMenuItem jMenuItemTipoStatus;
+    private javax.swing.JMenuItem jMenuItemTiposDeCobrança;
+    private javax.swing.JMenuItem jMenuItemTiposDeComissão;
+    private javax.swing.JMenuItem jMenuItemTiposDeContato;
+    private javax.swing.JMenuItem jMenuItemTiposDeDocumentosFinanceiro;
+    private javax.swing.JMenuItem jMenuItemTiposDeEvento;
+    private javax.swing.JMenuItem jMenuItemTiposDeHistóricoDeContato;
+    private javax.swing.JMenuItem jMenuItemTiposDeImpressão;
+    private javax.swing.JMenuItem jMenuItemTiposDePedido;
+    private javax.swing.JMenuItem jMenuItemTiposDeProblema;
+    private javax.swing.JMenuItem jMenuItemTransportadoras;
+    private javax.swing.JMenuItem jMenuItemTécnicos;
+    private javax.swing.JMenuItem jMenuItemUnidadesDeMedida;
+    private javax.swing.JMenuItem jMenuItemUsuários;
+    private javax.swing.JMenuItem jMenuItemVendaPorNotaFiscal;
+    private javax.swing.JMenuItem jMenuItemVendasAbaixoDoPreçoMínimo;
+    private javax.swing.JMenuItem jMenuItemVendasDeKit;
+    private javax.swing.JMenuItem jMenuItemVendasDeProdutoNoPeríodo;
+    private javax.swing.JMenuItem jMenuItemVendasDeProdutoPorGrade;
+    private javax.swing.JMenuItem jMenuItemVendasDeServiçoNoPeríodo;
+    private javax.swing.JMenuItem jMenuItemVendasNãoRealizadas;
+    private javax.swing.JMenuItem jMenuItemVendasPDVCanceladas;
+    private javax.swing.JMenuItem jMenuItemVendasPDVPorHora;
+    private javax.swing.JMenuItem jMenuItemVendasPDVPorTributação;
+    private javax.swing.JMenuItem jMenuItemVendasPorAdministradorasDeCartão;
+    private javax.swing.JMenuItem jMenuItemVendasPorClienteEProduto;
+    private javax.swing.JMenuItem jMenuItemVendasPorClienteÀVistaAPrazo;
+    private javax.swing.JMenuItem jMenuItemVendasPorCondiçõesDePagamento;
+    private javax.swing.JMenuItem jMenuItemVendasPorFilial;
+    private javax.swing.JMenuItem jMenuItemVendasPorLote;
+    private javax.swing.JMenuItem jMenuItemVendasPorPDV;
+    private javax.swing.JMenuItem jMenuItemVendasPorTurno;
+    private javax.swing.JMenuItem jMenuItemVendasPorVendedor;
+    private javax.swing.JMenuItem jMenuItemVendasÀVistaEAPrazo;
+    private javax.swing.JMenuItem jMenuItemZonaFrancaALC;
+    private javax.swing.JMenuItem jMenuItemÁreas;
+    private javax.swing.JMenu jMenuMDFe;
+    private javax.swing.JMenu jMenuModelosDeImpressão;
+    private javax.swing.JMenu jMenuNFCeSAT;
+    private javax.swing.JMenu jMenuNotasFiscais;
+    private javax.swing.JMenu jMenuNotasFiscaisCadastro;
+    private javax.swing.JMenu jMenuOrdemDeServiço;
+    private javax.swing.JMenu jMenuOrdemDeServiçoCadastro;
+    private javax.swing.JMenu jMenuOutros;
+    private javax.swing.JMenu jMenuPDV;
+    private javax.swing.JMenu jMenuProdução;
+    private javax.swing.JMenu jMenuRelatórioDeVendas;
+    private javax.swing.JMenu jMenuRelatórios;
+    private javax.swing.JMenu jMenuRelatóriosUnichef;
+    private javax.swing.JMenu jMenuSPED;
+    private javax.swing.JMenu jMenuTabelaDePreços;
+    private javax.swing.JMenu jMenuUnichef;
+    private javax.swing.JMenu jMenuUsuários;
+    private javax.swing.JMenu jMenuVendas;
+    private javax.swing.JMenu jMenuVendasCadastro;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    public static javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JPopupMenu.Separator jSeparator10;
+    private javax.swing.JPopupMenu.Separator jSeparator11;
+    private javax.swing.JPopupMenu.Separator jSeparator2;
+    private javax.swing.JPopupMenu.Separator jSeparator3;
+    private javax.swing.JPopupMenu.Separator jSeparator4;
+    private javax.swing.JPopupMenu.Separator jSeparator5;
+    private javax.swing.JPopupMenu.Separator jSeparator6;
+    private javax.swing.JPopupMenu.Separator jSeparator7;
+    private javax.swing.JPopupMenu.Separator jSeparator8;
+    private javax.swing.JPopupMenu.Separator jSeparator9;
     // End of variables declaration//GEN-END:variables
 }
